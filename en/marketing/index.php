@@ -9,46 +9,46 @@ $thisPageLanguages = array(
 
 $logoColorToShow = "withe";
 
-// 1. DICCIONARIO DE DATOS (ESPAÑOL)
+// 1. DICCIONARIO DE DATOS (INGLÉS)
 $marketingData = [
     'hero' => [
-        'title' => 'Marketing Digital',
-        'subtitle' => 'Hacemos que tu marca destaque.',
-        'button_text' => 'Empezar'
+        'title' => 'Digital Marketing',
+        'subtitle' => 'We make your brand stand out.',
+        'button_text' => 'Get Started'
     ],
     'benefits' => [
-        'header' => 'BENEFICIOS',
-        'title' => 'POR QUÉ ELEGIRNOS',
+        'header' => 'BENEFITS',
+        'title' => 'WHY CHOOSE US',
         'items' => [
             [
-                'title' => 'Estrategia',
-                'description' => 'Pensamos cada paso para asegurar el éxito.'
+                'title' => 'Strategy',
+                'description' => 'We plan every step to ensure success.'
             ],
             [
-                'title' => 'Creatividad',
-                'description' => 'Diseños y copys que atrapan a tu audiencia.'
+                'title' => 'Creativity',
+                'description' => 'Designs and copy that captivate your audience.'
             ]
         ]
     ],
     'projects' => [
-        'title' => 'Casos de Éxito'
+        'title' => 'Success Stories'
     ],
     'services' => [
-        'title' => 'Nuestros Servicios'
+        'title' => 'Our Services'
     ],
     'contact' => [
-        'title' => '¿Querés potenciar <br>tu marca digital?',
-        'button_text' => 'Agendar Llamada'
+        'title' => 'Do you want to boost <br>your digital brand?',
+        'button_text' => 'Book a Call'
     ]
 ];
 ?>
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <?php
   $pageTitle = "Mutanto | Marketing";
-  $pageDescription = "Potencia tu marca con nuestros servicios de marketing digital.";
-  $pageKey = "Marketing, Mutanto, Servicios Digitales";
+  $pageDescription = "Boost your brand with our digital marketing services.";
+  $pageKey = "Marketing, Mutanto, Digital Services";
   $pageUrl = URL_SITE . $language . "/" . $thisPageLanguages[$language];
   $pageCardDescription = $pageDescription;
   $pageCardImagen = $pageUrl . "mutantoImagenCard.png";
