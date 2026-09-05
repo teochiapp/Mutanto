@@ -1,0 +1,559 @@
+body,
+header {
+    background-color: var(--blancomutanto);
+}
+.header__mutanto-language span,
+.header__mutanto-select-language-hidden {
+    color: #000;
+}
+.mutanto-services___title * {
+    margin: -5px;
+}
+.mutanto-services___title {
+    text-align: center;
+}
+.mutanto-services___title h3 {
+    text-align: center;
+    font-weight: 600;
+}
+.mutanto-services___start {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.mutanto-services___BordeFrame,
+.mutanto-services___startframe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-orient: vertical;
+}
+.mutanto-services___startframe {
+    width: 100vw;
+    height: 390px;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.mutanto-services___BordeFrame {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--negromutanto)), to(var(--negromutanto))), -webkit-gradient(linear, left top, left bottom, from(var(--negromutanto)), to(var(--negromutanto))),
+        -webkit-gradient(linear, left top, left bottom, from(var(--negromutanto)), to(var(--negromutanto))), -webkit-gradient(linear, left top, left bottom, from(var(--negromutanto)), to(var(--negromutanto))),
+        -webkit-gradient(linear, left top, left bottom, from(var(--negromutanto)), to(var(--negromutanto))), -webkit-gradient(linear, left top, left bottom, from(var(--negromutanto)), to(var(--negromutanto))),
+        -webkit-gradient(linear, left top, left bottom, from(var(--negromutanto)), to(var(--negromutanto))), -webkit-gradient(linear, left top, left bottom, from(var(--negromutanto)), to(var(--negromutanto))),
+        -webkit-gradient(linear, left top, left bottom, from(white), to(white));
+    background-image: -o-linear-gradient(var(--negromutanto), var(--negromutanto)), -o-linear-gradient(var(--negromutanto), var(--negromutanto)), -o-linear-gradient(var(--negromutanto), var(--negromutanto)),
+        -o-linear-gradient(var(--negromutanto), var(--negromutanto)), -o-linear-gradient(var(--negromutanto), var(--negromutanto)), -o-linear-gradient(var(--negromutanto), var(--negromutanto)),
+        -o-linear-gradient(var(--negromutanto), var(--negromutanto)), -o-linear-gradient(var(--negromutanto), var(--negromutanto)), -o-linear-gradient(white, #fff);
+    background-image: linear-gradient(var(--negromutanto), var(--negromutanto)), linear-gradient(var(--negromutanto), var(--negromutanto)), linear-gradient(var(--negromutanto), var(--negromutanto)),
+        linear-gradient(var(--negromutanto), var(--negromutanto)), linear-gradient(var(--negromutanto), var(--negromutanto)), linear-gradient(var(--negromutanto), var(--negromutanto)),
+        linear-gradient(var(--negromutanto), var(--negromutanto)), linear-gradient(var(--negromutanto), var(--negromutanto)), linear-gradient(white, #fff);
+    background-repeat: no-repeat;
+    background-size: 2px 19px, 22px 2px, 2px 19px, 22px 2px, 2px 19px, 22px 2px, 2px 19px, 22px 2px, 22px 2px, 2px 19px, 22px 2px;
+    background-position: left bottom, left bottom, left top, left top, right top, right top, right bottom, right bottom;
+    width: 60%;
+    height: auto;
+    display: flex;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.mutanto-services___start-footer,
+.mutanto-services__uiux {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-direction: normal;
+}
+.mutanto-services___BordeFrame picture {
+    max-width: 1346px;
+    height: auto;
+    margin-bottom: -8px;
+    margin-top: -50px;
+}
+.mutanto-services___startframe h1 {
+    font-family: Poppins;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+    letter-spacing: -1.056px;
+    margin-bottom: -25px;
+    margin-top: -25px;
+}
+.mutanto-services___startframe h1.extent {
+    margin-top: -35px;
+    white-space: nowrap;
+    margin-bottom: 25px;
+}
+.mutanto-services___start-footer {
+    display: flex;
+    width: 98%;
+    gap: 12px;
+    position: absolute;
+    bottom: 0;
+    -webkit-box-orient: horizontal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+.mutanto-services___start-footer-logo img {
+    width: 83px !important;
+    height: auto !important;
+    padding: 12px;
+}
+.mutanto-services___start-footer p {
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    white-space: nowrap;
+    padding: 12px;
+}
+.mutanto-services___startLine {
+    width: 100%;
+    height: 1px;
+    background-color: var(--negromutanto);
+    margin: 12px;
+}
+.mutanto-services__uiux {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.mutanto-services__uiux_two-tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    position: relative;
+    top: -150px;
+}
+.mutanto-services__servicios-uiux,
+.mutanto-services__tuIdeaLa {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.mutanto-services__servicios-uiux-tab2 {
+    margin-top: 42px;
+    margin-bottom: 125px;
+}
+.mutanto-services__servicios-digitales {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 120px;
+}
+.mutanto-services__servicios-digitales-uiux-tab2 {
+    margin-top: 42px;
+    margin-bottom: 125px;
+}
+.mutanto-services__tuIdeaLa h2 {
+    position: relative;
+    top: 30%;
+}
+.mutanto-services__tuIdeaLa > .mutanto__elements-button-with-bgLine {
+    width: 100% !important;
+    top: 30%;
+    background: -webkit-gradient(linear, right top, left top, color-stop(-0.53%, rgba(0, 0, 0, 0)), color-stop(48.82%, #000), color-stop(99.91%, rgba(0, 0, 0, 0)));
+    background: -o-linear-gradient(right, rgba(0, 0, 0, 0) -0.53%, #000 48.82%, rgba(0, 0, 0, 0) 99.91%);
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0) -0.53%, #000 48.82%, rgba(0, 0, 0, 0) 99.91%);
+}
+.mutanto-services__tuIdeaLa > .mutanto__elements-button-with-bgLine > .mutanto__elements-button {
+    border: none;
+}
+.mutanto__elements-blackLine.mobileHidden {
+    display: block;
+}
+.mutanto__elements-blackLine.mobileShow {
+    display: none;
+}
+.animated-figure.div5 {
+    position: relative !important;
+    left: 0;
+    top: 0;
+    -webkit-animation: 5s linear infinite run !important;
+    animation: 5s linear infinite run !important;
+    z-index: 0;
+    margin-top: -80px !important;
+}
+@-webkit-keyframes run {
+    0% {
+        left: -200px;
+    }
+    100% {
+        left: calc(100% + 100px);
+    }
+}
+@keyframes run {
+    0% {
+        left: -200px;
+    }
+    100% {
+        left: calc(100% + 100px);
+    }
+}
+.mutanto-space___.space01 {
+    height: 8px;
+}
+.mutanto-space___.space02 {
+    height: 64px;
+}
+.mutanto-space___.space03 {
+    height: 100px;
+}
+.mutanto-space___.space42 {
+    height: 42px;
+}
+.mutanto-space___.space34 {
+    height: 34px;
+}
+@media (max-width: 1200px) {
+    main > div:not(:first-child) {
+        margin-top: 120px !important;
+        height: auto !important;
+    }
+}
+@media (max-width: 1199px) and (min-width: 577px) {
+    main > div:not(:first-child) {
+        margin-top: 0 !important;
+        height: auto !important;
+    }
+    .mutanto-services___startframe h1.extent {
+        white-space: normal;
+        text-align: center;
+    }
+    .mutanto-services___start {
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+    .mutanto-services___BordeFrame * {
+        margin: 3px 0;
+        padding: 0;
+    }
+    .mutanto-services___BordeFrame {
+        width: 90%;
+    }
+    .mutanto-services___BordeFrame h1 {
+        font-size: 86px;
+        line-height: 93.5%;
+        letter-spacing: -0.946px;
+    }
+    .mutanto-services___BordeFrame picture {
+        width: 100%;
+        margin-top: -32px;
+    }
+    .mutanto-services___BordeFrame picture img,
+    .mutanto-services___startLine,
+    .mutanto__elements-tabTwo,
+    .mutanto__elements-tabTwo-header-buttons {
+        width: 100%;
+    }
+    .mutanto__elements-tabOne {
+        width: 380px;
+        height: auto;
+        margin-left: 5px;
+        background-size: 33%;
+    }
+    .mutanto__elements-tabOne-content {
+        padding: 96px 32px 60px;
+        margin: 0;
+    }
+    .mutanto__elements-tabOne-header-buttons span {
+        padding: 7px 14px;
+    }
+    .mutanto__elements-tabOne-header-buttons {
+        gap: 10px;
+        margin-right: 7px;
+    }
+    .mutanto__elements-tabTwo-content-set {
+        -ms-grid-columns: 254px 1fr !important;
+        grid-template-columns: 254px 1fr !important;
+    }
+    .mutanto__elements-tabTwo-content-set * {
+        margin: 0;
+    }
+    .mutanto__elements-tabTwo-header-buttons span {
+        font-size: 18.5px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .mutanto__elements-tabTwo-structure {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+    .mutanto-services__tuIdeaLa h2 {
+        text-align: center;
+    }
+}
+.mutanto-services__tuIdeaLa {
+    margin-bottom: 300px;
+    margin-top: 0;
+}
+@media (max-width: 576px) {
+    h5 {
+        font-size: 16px !important;
+    }
+    main > div:not(:first-child) {
+        margin-top: 80px !important;
+        height: auto !important;
+    }
+    .mutanto-services___start {
+        margin-top: 80px;
+        margin-bottom: -80px;
+    }
+    .mutanto-services___startframe {
+        width: 100vw;
+        height: 100vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-bottom: 40px;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+    .mutanto-services___BordeFrame {
+        width: 80%;
+    }
+    .mutanto-services___BordeFrame picture,
+    .mutanto-services___title * {
+        margin: 0;
+    }
+    .mutanto-services___start-footer {
+        visibility: hidden;
+    }
+    .mutanto-services___startframe h1.extent {
+        margin-top: 0;
+    }
+    .mutanto-space___.space02 {
+        height: 40px;
+    }
+    #uxresearch > .brSpace,
+    .mutanto-services___start p br,
+    .owl-dots {
+        display: none;
+    }
+    .mutanto-services___start p {
+        width: 90vw;
+        position: absolute;
+        bottom: 0;
+    }
+    .mutanto-services___BordeFrame h1 {
+        font-size: 31px;
+        font-style: normal;
+        font-weight: 600;
+    }
+    .mutanto-services___title h5 {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+    }
+    .mutanto-services___title h3 {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+    }
+    .mutanto-space___.space34 {
+        height: 5vh;
+        width: 50%;
+    }
+    .mutanto__elements-tabOne-structure {
+        padding: 0;
+    }
+    .mutanto__elements-tabOne {
+        width: 90%;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        margin-left: 0;
+        padding: 0;
+        height: -webkit-min-content;
+        height: -moz-min-content;
+        height: min-content;
+        margin-top: 0;
+        background-size: 40%;
+    }
+    .mutanto__elements-tabOne-header-buttons {
+        margin-top: 35px;
+        gap: 10px;
+        margin-right: 10px;
+        margin-left: 40px;
+    }
+    .mutanto__elements-tabOne-header-buttons span {
+        padding: 8px;
+        font-size: 14px;
+    }
+    .mutanto-services__uiux_two-tabs {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+        top: 45px;
+    }
+    .mutanto__elements-tabOne-content {
+        padding: 24px;
+    }
+    .mutanto__elements-tabTwo-structure {
+        width: 100vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mutanto-services__servicios-digitales-uiux-tab2,
+    .mutanto-services__servicios-uiux-tab2 {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .mutanto__elements-tabTwo-header-buttons {
+        width: 100vw;
+    }
+    .mutanto__elements-tabTwo-header-buttons span {
+        font-size: 16px;
+        padding: 0;
+    }
+    .mutanto__elements-tabTwo-content-set {
+        -ms-grid-columns: 90%;
+        grid-template-columns: 90%;
+        margin-top: 0;
+        gap: 0;
+    }
+    .mutanto__elements-tabTwo-content-left {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mutanto__elements-tabTwo-content-left h5 {
+        padding-right: 10%;
+        margin-top: 17px;
+    }
+    .mutanto__elements-tabTwo-content-right {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+    }
+    .mutanto__elements-tabTwo-content-set-displayBlock {
+        gap: 0;
+    }
+    .mutanto__elements-tabTwo-header-buttons span.selected {
+        
+        background-color: #101010;
+        color: white;
+        font-weight: 400;
+        width: fit-content;
+        height: 29px;
+        padding: 4px 16px 4px 16px;
+        font-size: 12px;
+    }
+
+    .mutanto__elements-tabTwo-header-buttons span.available {
+        background-color: #101010 !important;
+        color: white;
+        font-weight: 400;
+        width: fit-content;
+        height: 29px;
+        padding: 4px 16px 4px 16px;
+        font-size: 12px;
+        opacity: 0.2;
+
+    }
+    .mutanto__elements-tabTwo-header > .mutanto__elements-blackLine {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+    }
+    .animated-figure.div5 {
+        top: 60px;
+    }
+    .mutanto-services__tuIdeaLa h2 {
+        text-align: center;
+        margin-bottom: 63px;
+    }
+    .owl-carousel .owl-stage-outer {
+        height: 29px !important;
+        margin-top: 24px;
+        margin-bottom: 17px;
+    }
+    .owl-item {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content !important;
+        margin-left: 16px;
+    }
+
+    /* August 2024 Scale Support */
+    .mutanto-services__servicios-uiux-tab2-scale-support {
+        zoom: 1;
+    }
+
+    .mutanto-services__servicios-digitales-uiux-tab2-scale-support {
+        zoom: 1;
+    }
+
+}

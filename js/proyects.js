@@ -1,0 +1,1 @@
+$(document).ready((function(){getWindowWidth()>=mobiles&&getWindowWidth()<=destktop&&$(".owl-carousel").owlCarousel({center:!0,items:1.8,loop:!0,margin:10}),getWindowWidth()<mobiles&&$(".owl-carousel").owlCarousel({items:1.3,loop:!0,nav:!1,center:!0,margin:10})}));

@@ -1,0 +1,738 @@
+.backgroundMesh {
+    width: 100vw;
+    height: 600px;
+    background-image: url(../img/net-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 30px;
+}
+.buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.slick-list {
+    padding: 0 !important;
+    overflow: visible !important;
+}
+.slick-slide .inner {
+    margin: 0 15px;
+}
+.animated-figure.div5 {
+    position: relative;
+    -webkit-animation: 5s cubic-bezier(0.17, 0.78, 0.71, 0.22) infinite run !important;
+    animation: 5s cubic-bezier(0.17, 0.78, 0.71, 0.22) infinite run !important;
+    z-index: 0;
+    bottom: -644px;
+    left: 1000px;
+}
+.mutanto-animation-intro__buttons {
+    position: relative !important;
+    bottom: 60px !important;
+}
+.mutanto-animation-intro__mutanto__elements-button {
+    position: absolute;
+    right: 13% !important;
+    top: -13px;
+}
+#mutanto-trae-tus-ideas {
+    width: 100%;
+    height: 600px;
+}
+.mutanto__title_fix-feb2024 {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.mutanto__title_fix-feb2024 h2 {
+    text-align: center;
+    position: relative;
+    bottom: -276px;
+    font-weight: 600 !important;
+}
+.mutanto__elements-bgLine {
+    margin: 20px auto;
+    width: 80vw;
+    height: 1px;
+    background: -webkit-gradient(linear, right top, left top, color-stop(-0.53%, rgba(132, 255, 95, 0)), color-stop(48.82%, #84ff5f), color-stop(99.91%, rgba(132, 255, 95, 0)));
+    background: -o-linear-gradient(right, rgba(132, 255, 95, 0) -0.53%, #84ff5f 48.82%, rgba(132, 255, 95, 0) 99.91%);
+    background: linear-gradient(270deg, rgba(132, 255, 95, 0) -0.53%, #84ff5f 48.82%, rgba(132, 255, 95, 0) 99.91%);
+    display: block;
+}
+@-webkit-keyframes run {
+    0% {
+        -webkit-transform: translateY(-50vh) translateX(-103vh) scale(1) rotate(-30deg);
+        transform: translateY(-50vh) translateX(-103vh) scale(1) rotate(-30deg);
+    }
+    100% {
+        -webkit-transform: translateY(-50vh) translateX(103vh) scale(1.1) rotate(-40deg);
+        transform: translateY(-50vh) translateX(103vh) scale(1.1) rotate(-40deg);
+    }
+}
+@keyframes run {
+    0% {
+        -webkit-transform: translateY(-50vh) translateX(-103vh) scale(1) rotate(-30deg);
+        transform: translateY(-50vh) translateX(-103vh) scale(1) rotate(-30deg);
+    }
+    100% {
+        -webkit-transform: translateY(-50vh) translateX(103vh) scale(1.1) rotate(-40deg);
+        transform: translateY(-50vh) translateX(103vh) scale(1.1) rotate(-40deg);
+    }
+}
+.mutanto-algunos-clientes br {
+    display: none;
+}
+.mutnto__element_cardOne-Structure {
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 60px 1fr 60px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 60px;
+    grid-row-gap: 55.5px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+}
+.mutanto__elements-card-one {
+    width: 398px;
+    height: 560px;
+    border-radius: 16px;
+    border: 2px solid var(--blancomutanto);
+    background-color: var(--negromutanto);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    gap: 40px;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
+    background-position: center 296px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.mutanto__elements-card-one-hederCard,
+.mutanto__elements-card-one-proyectTags {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+}
+.mutanto__elements-card-one:before {
+    background-position-x: -5px;
+    border-radius: 14px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position-y: 323px;
+    background-size: 103%;
+    opacity: 0.3;
+    width: 394px;
+    height: 556px;
+    position: absolute;
+    display: block;
+    z-index: -1;
+}
+.mutanto__elements-card-one:nth-child(2n):hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    -webkit-transform: rotate(5.62deg);
+    -ms-transform: rotate(5.62deg);
+    transform: rotate(5.62deg);
+    background-blend-mode: normal;
+}
+.mutanto__elements-card-one:nth-child(odd):hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    -webkit-transform: rotate(-8.25deg);
+    -ms-transform: rotate(-8.25deg);
+    transform: rotate(-8.25deg);
+    background-blend-mode: normal;
+}
+.slapp-Project:hover,
+.systel-Project:hover {
+    background-color: var(--violetamutanto);
+}
+.wellyGo-Project:hover {
+    background-color: #4eb76a;
+}
+.bocho-Project:hover {
+    background-color: #804abb;
+}
+.cref-Project:hover {
+    background-color: #12cac0;
+}
+.hst-pathways:hover {
+    background-color: #33b2cc;
+}
+.mutanto__elements-card-one-visible {
+    visibility: visible;
+}
+.mutanto__elements-card-one-hederCard {
+    margin-top: 48px;
+    display: flex;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    height: 20px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+.mutanto__elements-card-one-proyectDescription,
+.mutanto__elements-card-one-proyectName,
+.mutanto__elements-card-one-proyectTitle {
+    margin-left: 32px;
+    margin-right: 32px;
+}
+.mutanto__elements-card-one-proyectTags {
+    margin-right: 20px;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    gap: 8.824px;
+    white-space: nowrap;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+.mutanto__elements-card-one-proyectName {
+    font: 500 16px/150% Poppins;
+    letter-spacing: -0.176px;
+    opacity: 0.5;
+    white-space: nowrap;
+    color: var(--blancomutanto);
+}
+.mutanto__elements-card-one-proyectTags a {
+    color: var(--negromutanto);
+    font: 500 15px/150% Poppins;
+    letter-spacing: -0.17px;
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 25.369px;
+    padding: 11.03px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 11.03px;
+    border-radius: 8.824px;
+    border: 1.103px solid var(--negromutanto);
+    text-transform: uppercase;
+}
+.mutanto__elements-card-one-proyectTitle {
+    color: var(--blancomutanto);
+    font: 700 32px/150% Poppins;
+    letter-spacing: -0.352px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+.mutanto__elements-card-one-proyectDescription {
+    color: var(--blancomutanto);
+    font: 500 17.648px/150% Poppins;
+    letter-spacing: -0.194px;
+    opacity: 0.8;
+    margin-top: -17px;
+}
+.mutanto__elements-card-one-proyectBttn {
+    position: absolute;
+    top: 460px;
+    left: 225px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 115.291px;
+    height: 55.437px;
+    padding: 16.295px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 9.031px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    border-radius: 33.865px;
+    border: 1.129px solid #000;
+    background: var(--negromutanto);
+}
+.mutanto__elements-card-one-proyectBttn div i {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    width: 31.316px;
+    height: 31.316px;
+    border-radius: 50%;
+    background-color: var(--verdemutanto);
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.mutanto__elements-card-one-proyectBttn div span {
+    color: var(--blancomutanto);
+    text-align: center;
+    font: 400 22.577px/150% Poppins;
+    letter-spacing: -0.248px;
+}
+
+ /* Mutanto Update 1 - August 2024 */
+
+.container__formLatam {
+    container: rounded-box / inline-size;
+}
+
+.mutanto__elements-rounded-box {    
+    max-width: 95vw;
+    height: 349px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid white;
+    border-radius: 32px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 56px 40px 40px 40px;
+    overflow: hidden;
+    position: relative;
+}
+
+.mutanto__elements-rounded-box .-topSide {
+    display: flex;
+    flex-flow: column nowrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.mutanto__elements-rounded-box .-topSide .-left h1 {
+    font: 500 56px/150% Poppins;
+    letter-spacing: -0.18px;
+    color: white;
+    max-width: 681px;
+    margin: 0px 0px 0px 0px;
+    line-height: 1.1;
+}
+
+.mutanto__elements-rounded-box .-topSide .-left span {
+    color: var(--verdemutanto);
+}
+
+.mutanto__elements-rounded-box .-topSide .-left p {
+    font: 400 20px/150% Poppins;
+    letter-spacing: -0.18px;
+    color: white;
+    max-width: 681px;
+    
+} 
+
+.mutanto__elements-rounded-box .-buttonsSide {
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    bottom: 70px;
+}
+
+.mutanto__elements-rounded-box .-buttonsSide button {
+    width: 249px !important;
+   
+}
+
+.mutanto_latam_talent {
+    position: absolute;
+    z-index: -1;
+    width: 412.99px;
+    height: 412.99px;
+    right: 191px;
+    top: -27px;
+    transition: all 0.5s ease;
+    -webkit-animation: rotate-center 25s linear infinite both;
+	        animation: rotate-center 25s linear infinite both;
+    @container rounded-box (min-width: 900px) and (max-width: 1311px) {
+        right: 50px;
+        transition: all 0.5s ease;
+    };
+    @container rounded-box (min-width: 790px) and (max-width: 999px) {
+        right: 10px;
+    }
+}
+
+
+.mutanto_update_08_2024_header_services {
+    width: 520px;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 42px;
+    position: relative;
+    left: 16px;
+    margin-top: 59px;
+    margin-bottom: 26px;
+}
+
+
+.-arrows-containter {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 8px;
+}
+
+ /* SCALE August 2024 UPDATE */
+    
+ .owl-stage-outer-support-scale {
+    overflow: visible !important;
+ }
+
+ .mutanto__elements-card-two-Structure-suppurt-scale {
+    left: -63px;
+ } 
+
+
+ /* END Mutanto Update 1 - august 2024 */
+
+
+@container rounded-box (min-width: 200px) and (max-width: 1004px) {
+    
+    .mutanto__elements-rounded-box {
+        padding: 16px 16px 24px 16px !important;
+        height: 400px;
+    }
+
+    .mutanto__elements-rounded-box .-topSide .-left {
+        margin: auto;
+    }
+
+    .mutanto__elements-rounded-box .-topSide {
+        flex-flow: column nowrap;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .mutanto__elements-rounded-box .-topSide .-left h1 {
+        font: 700 32px/150% Poppins;
+        letter-spacing: 0%;
+        color: white;
+        max-width: 681px;
+        margin: 0px 0px 0px 0px;
+        transition: all 0.5s ease;
+    }
+
+    .mutanto__elements-rounded-box .-topSide .-left p {
+        font: 400 14px/150% Poppins;
+        letter-spacing: -0.18px;
+        transition: all 0.5s ease;
+        margin-top: 24px;
+    }
+
+    .mutanto__elements-rounded-box .-buttonsSide button {
+        width: 243px !important;
+        height: 46px;
+        margin: 0px auto 16px auto ;
+        transition: all 0.5s ease;
+
+    }
+
+    .mutanto_latam_talent {
+        transition: all 0.5s ease;
+        width: 220px;
+        height: 220px;
+        right: -79px;
+        top: 64%;
+    }
+}
+
+@container rounded-box (min-width: 200px) and (max-width: 448px) { 
+    .mutanto__elements-rounded-box .-buttonsSide {
+        bottom: 12px;
+    }
+}
+
+
+ /* Animation for latam_talent */
+ @-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+
+
+ /* END Animation for latam_talent */
+
+ .-hiddenMobile {
+    display: block !important;
+}
+
+
+
+
+@media (max-width: 1199px) and (min-width: 577px) {
+    .mutnto__element_cardOne-Structure {
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        scale: 0.8;
+        margin-top: -120px;
+    }
+    .animated-figure.div5 {
+        -webkit-animation: 5s cubic-bezier(0.17, 0.78, 0.71, 0.22) infinite run !important;
+        animation: 5s cubic-bezier(0.17, 0.78, 0.71, 0.22) infinite run !important;
+        z-index: 0;
+        bottom: -105px;
+        left: 250px;
+    }
+    .mutanto__elements-card-two-Structure-suppurt-scale {
+        left: 0px !important;
+    }
+
+    .owl-nav {
+        display: none !important;
+    }
+
+
+}
+@media (max-width: 577px) {
+
+  
+
+    #mutanto-animation-intro,
+    #mutanto-trae-tus-ideas > .backgroundMesh {
+        width: 100vw;
+        background-image: url(../img/net-background.jpg);
+        background-repeat: no-repeat;
+    }
+    .mutanto-space___.fixMobile1 {
+        height: 40px !important;
+    }
+    .mutanto-space___.fixMobile2 {
+        height: 32px !important;
+    }
+    .mutanto-space___.home.three {
+        height: 80px !important;
+    }
+    .mutanto__elements-card-one {
+        height: 391px !important;
+        -webkit-filter: none;
+        filter: none;
+    }
+    #mutanto-trae-tus-ideas {
+        width: 100%;
+        height: calc(70vh);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .mutanto__title_fix-feb2024 h2 {
+        position: inherit;
+        margin-bottom: 100px;
+    }
+    #mutanto-trae-tus-ideas > .backgroundMesh {
+        height: 600px;
+        background-position: -480px -55px;
+    }
+    #mutanto-animation-intro {
+        background-position: bottom;
+        background-size: 300%;
+        padding-top: 200px;
+    }
+    .mutanto__elements-card-one::before {
+        background-position-x: -25px;
+        border-radius: 14px;
+        content: "";
+        background-repeat: no-repeat;
+        background-position-y: 294px;
+        opacity: 0.3;
+        width: 275.19px;
+        height: 387px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-position-y: 224px;
+        background-size: 102%;
+        opacity: 0.9;
+    }
+    .mutanto__elements-card-one-proyectBttn {
+        top: 300px;
+        left: 140px;
+        scale: 0.9;
+    }
+    .mutanto__elements-card-one-proyectTitle {
+        font-size: 20px !important;
+        margin-top: 30px;
+    }
+    .mutanto__elements-card-one-proyectDescription,
+    .mutanto__elements-card-one-proyectName {
+        font-size: 11px;
+    }
+    .mutanto__elements-card-one-proyectTags a {
+        font-size: 9px;
+    }
+    .hst-pathways,
+    .ottaa-Project,
+    .slapp-Project,
+    .wellyGo-Project {
+        -webkit-transform: rotate(5.62deg);
+        -ms-transform: rotate(5.62deg);
+        transform: rotate(5.62deg);
+    }
+    .bocho-Project,
+    .cref-Project,
+    .systel-Project {
+        -webkit-transform: rotate(-8.25deg);
+        -ms-transform: rotate(-8.25deg);
+        transform: rotate(-8.25deg);
+    }
+    .mutanto-algunos-clientes br {
+        display: inline;
+    }
+    .mutanto__elements-bgLine {
+        display: none;
+    }
+    .animated-figure.div5 {
+        -webkit-animation: 3s cubic-bezier(0.17, 0.78, 0.71, 0.22) infinite run !important;
+        animation: 3s cubic-bezier(0.17, 0.78, 0.71, 0.22) infinite run !important;
+        z-index: 0;
+        bottom: -240px;
+        left: 70px;
+    }
+
+    /*August 2024 UPDATE */
+    .mutanto__elements-card-two-Structure-suppurt-scale {
+        left: 0px !important;
+     } 
+
+    .mutanto_update_08_2024_header_services  {
+        width: 300px;
+        left: 0px;
+    }
+
+    #muntanto-nuestros-servicios  .owl-nav {
+        display: none !important;
+    }
+
+    .mutnto__element_cardOne-Structure .owl-nav {
+        justify-content: space-between !important;
+    } 
+
+    .mutnto__element_cardOne-Structure .mutanto__elements-arrow-rigth {
+        background-color: transparent !important;
+        color: white;
+    }
+
+    .mutnto__element_cardOne-Structure .mutanto__elements-arrow-rigth:hover {
+        color: var(--verdemutanto);
+    }
+    /* END August 2024 UPDATE */
+    
+    .-gradient {
+        width: 100%;
+        background-image: url(/img/mutanto-home-degrade.webp);
+
+    }
+
+}
+
+@media (max-width: 1199px) and (min-width: 577px) {
+    #mutanto-animation-intro {
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: -1177px 0;
+        background-size: 400%;
+        padding-top: calc(100vh / 3);
+    }
+    .animated-figure.div5 {
+        -webkit-animation: 3s cubic-bezier(0.17, 0.78, 0.71, 0.22) infinite run !important;
+        animation: 3s cubic-bezier(0.17, 0.78, 0.71, 0.22) infinite run !important;
+        z-index: 0;
+        bottom: -723px;
+        left: 70px;
+    }
+    
+}
+

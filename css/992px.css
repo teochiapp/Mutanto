@@ -1,0 +1,222 @@
+.Site-interface,
+.offcanvas-nav__item__line-separator-gradient {
+    width: 100vw;
+}
+.mutanto__elements-post,
+.owl-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-direction: normal;
+}
+body {
+    min-width: 600px;
+}
+header {
+    height: 80px;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+#header__mutanto-logo {
+    margin-left: 15px;
+    margin-top: 0;
+}
+.header__mutanto-logo-open-menu-text {
+    font: 700 23.205px Prompt, sans-serif;
+    color: var(--NEGRO-MUTANTO);
+    visibility: visible !important;
+    -webkit-animation: 0.6s fadeIn;
+    animation: 0.6s fadeIn;
+}
+.animationFadeIn {
+    -webkit-animation: 0.6s fadeIn;
+    animation: 0.6s fadeIn;
+}
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.header__mutanto-select-language {
+    position: absolute;
+    top: 39%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#animation_imagen_container,
+.header__mutanto-language-full-word-hide,
+.header__mutanto-language-full-word-show,
+.header__mutanto-select-language-hidden,
+.offcanvas-nav__back-arrow-buttn {
+    visibility: hidden;
+}
+.row {
+    padding-right: 16px;
+    padding-top: 4px;
+}
+.offcanvas-nav__list {
+    margin-left: -40px;
+}
+.offcanvas-nav__item {
+    height: 108px;
+    width: 100vw;
+    padding-top: 0;
+}
+.heder__mutanto-footer-nav p {
+    font-size: 16px;
+}
+.hamburger-menu {
+    overflow: visible;
+}
+.mutanto_footer___structure {
+    -ms-grid-columns: 180px 1fr;
+    grid-template-columns: 180px 1fr;
+    padding: 40px;
+}
+.mutanto_footer___top.left {
+    top: -58px;
+    left: 5px;
+}
+.mutanto_footer___structure > .mutanto_footer___top h3 {
+    font-size: 27px;
+}
+.mutnto__element_cardOne-Structure {
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+.mutanto__elements-card-one {
+    width: 360px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-blend-mode: soft-light;
+}
+.mutanto__elements-card-one-proyectTitle {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 28px;
+}
+.mutnto__element_cardOne-Structure .mutnto__element_cardOne-Structure {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    justify-items: center;
+    grid-row-gap: 15px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.mutanto__elements-card-two {
+    position: relative;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+.owl-nav {
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.mutanto__elements-post-structure {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+.mutanto__elements-post {
+    display: flex;
+    width: 416.981px;
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 24px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.mutanto__elements-post img {
+    width: 416.981px;
+}
+.mutanto__elements-post :is(h4, h5) {
+    font-size: 16px;
+}
+.mutanto__elements-tabTwo-structure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.mutanto__elements-tabTwo-header-buttons {
+    width: 96vw;
+}
+.mutanto__elements-tabTwo-content-right img {
+    width: 100%;
+}
+.mutanto-space___.home.one {
+    height: 100px;
+}
+.mutanto-space___.home.two {
+    height: 150px;
+}
+.mutanto-space___.home.three {
+    height: 150px !important;
+}
+.mutanto-space___.home.four {
+    height: 0px;
+}
+.mutanto-space___.home.five {
+    height: 180px;
+}
+.mutanto-animation-intro__mutanto__elements-button {
+    visibility: visible;
+}
+.mutanto-animation-intro__buttons {
+    width: 90vw;
+}
+.mutanto__elements-button-with-bgLine.extendedIntrao {
+    width: 60vw;
+}
+.mutanto-animation-intro__text {
+    font-size: 65px;
+    top: 12%;
+}
+.mutanto__fix-1 h2 {
+    margin-bottom: -37px;
+}

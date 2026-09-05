@@ -1,0 +1,63 @@
+.mutanto__elements-tabTwo-structure {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mutanto__elements-tabTwo {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.mutanto__elements-tabTwo-header-buttons {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 1285px;
+    align-items: flex-start;
+    gap: 16px;
+}
+.mutanto__elements-tabTwo-header-buttons span {
+    display: flex;
+    height: 74px;
+    padding: 16px 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    flex: 1 0 0;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 32px;
+    cursor: pointer;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.mutanto__elements-tabTwo-header-buttons span.selected {
+    background-color: var(--negromutanto);
+    color: var(--blancomutanto);
+}
+.mutanto__elements-tabTwo-header-buttons span.available {
+    background-color: var(--blancomutanto);
+    color: var(--negromutanto);
+}
+.mutanto__elements-tabTwo-content-set {
+    display: grid;
+    grid-template-columns: 367px 1fr;
+    gap: 24px;
+    margin-top: 32px;
+}
+.mutanto__elements-tabTwo-content-set-displayHidden {
+    display: none;
+}
+.mutanto__elements-tabTwo-content-set-displayBlock {
+    display: block;
+    display: grid;
+    grid-template-columns: 367px 1fr;
+    gap: 24px;
+    -webkit-animation: 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both fade-in-bottom;
+    animation: 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both fade-in-bottom;
+}

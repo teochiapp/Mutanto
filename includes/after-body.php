@@ -1,0 +1,1 @@
+<script src="<?php echo (URL_SITE) ?>packs/code.jquery.com_jquery-3.7.1.slim.min.js"></script>

@@ -1,0 +1,1 @@
+const mobiles=579,tables=1199,destktop=1200,descktop=1200;function getWindowWidth(){return window.innerWidth}function getWindowHeight(){return window.innerHeight}function setUpDivAsFullScreen(...t){const e=Math.max(document.documentElement.clientHeight);t.forEach((t=>{t.style.height=e+"px"}))}

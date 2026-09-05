@@ -1,0 +1,91 @@
+.mutanto__elements-tabOne,
+h5 mark {
+    background-color: var(--negromutanto);
+}
+h5 mark {
+    color: var(--verdemutanto);
+}
+.mutanto__elements-tabOne {
+    width: 624.663px;
+    height: 662.59px;
+    background-image: url(/img/tabCorner2.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 30%;
+    border-radius: 50px;
+    margin-top: 150px;
+    margin-left: 50px;
+    border: 2px solid #fff;
+}
+.mutanto__elements-tabOne-header {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-left: 35px;
+}
+.mutanto__elements-tabOne-header-buttons {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    gap: 16px;
+    justify-content: flex-end;
+    margin-top: 47px;
+    margin-right: 40px;
+    margin-left: 50px;
+}
+.mutanto__elements-tabOne-header-buttons span {
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--negromutanto);
+    border-radius: 59px;
+    border: 1px solid var(--blancomutanto);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--blancomutanto);
+}
+.mutanto__elements-tabOne-space {
+    width: 100%;
+    height: 96px;
+}
+.mutanto__elements-tabOne-content-displayHidden {
+    display: none;
+    -webkit-animation: 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both text-blur-out;
+    animation: 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both text-blur-out;
+}
+.mutanto__elements-tabOne-content-displayBlock {
+    display: block;
+    -webkit-animation: 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both fade-in-bottom;
+    animation: 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both fade-in-bottom;
+}
+.mutanto__elements-tabOne-content {
+    padding: 96px 40px 45px 61px;
+}
+@-webkit-keyframes fade-in-bottom {
+    0% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes fade-in-bottom {
+    0% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
