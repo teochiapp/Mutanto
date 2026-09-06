@@ -4,6 +4,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 include("../../config.php");
+include("../../mail_credentials.php");
 require '../../vendor/autoload.php';
 
         use PHPMailer\PHPMailer\PHPMailer;
@@ -43,12 +44,12 @@ require '../../vendor/autoload.php';
         $mail = new PHPMailer;
         $mail->isSMTP();
         $mail->SMTPDebug = 0;
-        $mail->Host = 'c2271764.ferozo.com';
-        $mail->Port = 465;
+        $mail->Host = SMTP_HOST;
+        $mail->Port = SMTP_PORT;
         $mail->SMTPAuth = true;
         $mail->SMTPSecure = 'ssl';
-        $mail->Username = 'web@mutanto.com.ar';
-        $mail->Password = 'Mutantemos/24';
+        $mail->Username = SMTP_USERNAME;
+        $mail->Password = SMTP_PASSWORD;
 
         $mail->setFrom('web@mutanto.com.ar', 'Mutanto');
         $mail->addReplyTo('contact@mutanto.com.ar', 'Mutanto');
