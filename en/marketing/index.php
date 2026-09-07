@@ -12,9 +12,10 @@ $logoColorToShow = "withe";
 // 1. DICCIONARIO DE DATOS (INGLÉS)
 $marketingData = [
     'hero' => [
-        'title' => 'Digital Marketing',
-        'subtitle' => 'We make your brand stand out.',
-        'button_text' => 'Get Started'
+        'eyebrow' => 'ON-DEMAND DESIGN FOR MARKETING TEAMS',
+        'title' => 'Your marketing team has<br>the strategy.',
+        'title_highlight' => 'Who is making the assets?',
+        'description' => 'We work with marketing teams to create <strong>high-quality assets</strong> for mkt campaigns, product kickoff\'s, sales strategies, brand & content, without the overhead of a traditional agency.'
     ],
     'benefits' => [
         'header' => 'BENEFITS',
@@ -61,9 +62,10 @@ $marketingData = [
   <link rel="stylesheet" href="<?php echo (URL_SITE) ?>css/marketing/main.css">
 </head>
 <body>
-  <?php require_once(realpath($_SERVER['DOCUMENT_ROOT']. "/includes/loader.php")) ?>
+  <!-- Loader is disabled for the marketing page to prevent unstyled flashes, as its CSS is in the main site bundle -->
+  <!-- <?php // require_once(realpath($_SERVER['DOCUMENT_ROOT']. "/includes/loader.php")) ?> -->
   <?php require_once(realpath($_SERVER['DOCUMENT_ROOT'] . "/includes/cookies.php")) ?>
-  <?php require_once(realpath($_SERVER['DOCUMENT_ROOT'] . "/includes/header.php")) ?>
+  <?php require_once(realpath($_SERVER['DOCUMENT_ROOT'] . "/includes/header-marketing.php")) ?>
 
   <main>
     <!-- 2. RENDERIZADO DE COMPONENTES -->
@@ -79,7 +81,7 @@ $marketingData = [
     <?php require_once(realpath($_SERVER['DOCUMENT_ROOT'] . "/includes/marketing/contact.php")); ?>
   </main>
 
-  <?php require_once(realpath($_SERVER['DOCUMENT_ROOT']. "/includes/footer.php")) ?>
+  <?php require_once(realpath($_SERVER['DOCUMENT_ROOT']. "/includes/footer-marketing.php")) ?>
   <?php require_once(realpath($_SERVER['DOCUMENT_ROOT'] . "/includes/after-body.php")) ?>
   <script src="<?php echo (URL_SITE) ?>js/main.js"></script>
 </body>

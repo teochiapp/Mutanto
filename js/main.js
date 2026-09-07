@@ -35,27 +35,33 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     //SetUp owl-carousel ---- HOME 
-    if (getWindowWidth() <= mobiles) {
-        mutantoLogoTxt.style.display = "none";
-        mutantoLogoTxtDarkMode.style.display = "none";
-    }
+    if (mutantoLogoTxt && mutantoLogoTxtDarkMode) {
+        if (getWindowWidth() <= mobiles) {
+            mutantoLogoTxt.style.display = "none";
+            mutantoLogoTxtDarkMode.style.display = "none";
+        }
 
-    //Home 
-    if (getWindowWidth() >= destktop) {
-        mutantoLogoTxt.style.display = "block";
-        mutantoLogoTxtDarkMode.style.display = "none";
-    }
+        //Home 
+        if (getWindowWidth() >= destktop) {
+            mutantoLogoTxt.style.display = "block";
+            mutantoLogoTxtDarkMode.style.display = "none";
+        }
 
-    if (getWindowWidth() <= tables && getWindowWidth() > mobiles) {
-        mutantoLogoTxt.style.display = "block";
-        mutantoLogoTxtDarkMode.style.display = "none";
+        if (getWindowWidth() <= tables && getWindowWidth() > mobiles) {
+            mutantoLogoTxt.style.display = "block";
+            mutantoLogoTxtDarkMode.style.display = "none";
+        }
     }
 
     //Hidden GotoTopButtons
-    gotoTopButtn.style.visibility = "hidden";
+    if (gotoTopButtn) {
+        gotoTopButtn.style.visibility = "hidden";
+    }
 
     //Loading Screen
-    mutantoLoaderScreen.style.visibility = "hidden";
+    if (mutantoLoaderScreen) {
+        mutantoLoaderScreen.style.visibility = "hidden";
+    }
 
     //Cookies 
     

@@ -1,11 +1,21 @@
 <section id="marketing-hero" class="marketing-hero">
-    <div class="textCenter">
-        <h1 class="blancoMuntanto"><?php echo $marketingData['hero']['title']; ?></h1>
-        <p class="blancoMuntanto"><?php echo $marketingData['hero']['subtitle']; ?></p>
+  <!-- Background Elements -->
+  <div class="marketing-hero__star-1"></div>
+  <div class="marketing-hero__star-2"></div>
+  
+  <!-- Content -->
+  <div class="marketing-hero__content">
+    <div class="marketing-hero__eyebrow">
+      <?php echo $marketingData['hero']['eyebrow']; ?>
     </div>
-    <div class="mutanto__elements-button-with-bgLine" style="margin-top: 50px;">
-        <button class="mutanto__elements-button" onclick="window.location.href='#marketing-contact'">
-            <?php echo $marketingData['hero']['button_text']; ?>
-        </button>
+    
+    <h1 class="marketing-hero__title">
+      <?php echo $marketingData['hero']['title']; ?><br>
+      <span class="marketing-hero__title-highlight"><?php echo $marketingData['hero']['title_highlight']; ?></span>
+    </h1>
+    
+    <div class="marketing-hero__description">
+      <?php echo $marketingData['hero']['description']; ?>
     </div>
+  </div>
 </section>

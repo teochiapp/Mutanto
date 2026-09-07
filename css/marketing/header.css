@@ -1,0 +1,243 @@
+/* Header Container */
+.marketing-header {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 64px;
+  position: fixed;
+  height: 92px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  background: rgba(16, 16, 16, 0.5);
+  border-bottom: 1px solid #292929;
+  backdrop-filter: blur(10px);
+  z-index: 9999;
+}
+
+
+/* Nav Menu */
+.marketing-header__nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.marketing-header__nav a {
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 145%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.005em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  transition: color 0.3s ease;
+}
+
+.marketing-header__nav a:hover {
+  color: #84FF5F;
+}
+
+/* Logo Container */
+#header__mutanto-logo {
+  display: flex;
+  align-items: center;
+  gap: 8.18px;
+}
+
+.marketing-header__logo-img img {
+  width: 39.84px;
+  height: 40px;
+}
+
+.marketing-header__logo-txt img {
+  width: 100.49px;
+  height: 30.76px;
+}
+
+/* Actions Container */
+.marketing-header__actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+/* CTA Buttons */
+.cta-button {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 16px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.cta-button--solid {
+  padding: 12px 24px;
+  gap: 8px;
+  width: max-content;
+  height: 44px;
+  background: #84FF5F;
+  color: #101010;
+  border: 1px solid #84FF5F;
+}
+
+.cta-button--solid:hover {
+  background: transparent;
+  color: #84FF5F;
+}
+
+.cta-button--outline {
+  padding: 12px 24px;
+  gap: 12px;
+  width: max-content;
+  height: 44px;
+  border: 1px solid #84FF5F;
+  color: #84FF5F;
+  background: transparent;
+}
+
+.cta-button--outline:hover {
+  background: #84FF5F;
+  color: #101010;
+}
+
+.marketing-header__hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+/* Responsive adjust */
+@media (max-width: 1024px) {
+  .marketing-header {
+    padding: 24px 32px;
+  }
+
+  .marketing-header>nav {
+    display: none;
+  }
+
+  .marketing-header__actions {
+    display: none;
+  }
+
+  .marketing-header__hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .marketing-header {
+    padding: 24px 16px;
+  }
+}
+
+/* Mobile Menu Overlay */
+.marketing-mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(16, 16, 16, 0.5);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #292929;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 16px;
+  gap: 32px;
+  z-index: 10000;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.marketing-mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.marketing-mobile-menu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.marketing-mobile-menu__logo {
+  display: flex;
+  align-items: center;
+  gap: 8.18px;
+}
+
+.marketing-mobile-menu__close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.marketing-mobile-menu__nav {
+  width: 100%;
+}
+
+.marketing-mobile-menu__nav ul {
+  list-style: none;
+  margin: 24px 0;
+  padding: 0 16px 0 0;
+  /* Added right padding */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 32px;
+  width: 100%;
+}
+
+.marketing-mobile-menu__nav a {
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 145%;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.marketing-mobile-menu__actions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 24px;
+}
