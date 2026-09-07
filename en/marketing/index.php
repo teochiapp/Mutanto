@@ -10,6 +10,8 @@ $thisPageLanguages = array(
 $logoColorToShow = "withe";
 
 // 1. DICCIONARIO DE DATOS (INGLÉS)
+require_once(realpath($_SERVER['DOCUMENT_ROOT'] . "/img/marketing/services/icons.php"));
+
 $marketingData = [
     'hero' => [
         'eyebrow' => 'ON-DEMAND DESIGN FOR MARKETING TEAMS',
@@ -35,7 +37,34 @@ $marketingData = [
         'title' => 'Success Stories'
     ],
     'services' => [
-        'title' => 'Our Services'
+        'header' => 'SERVICES',
+        'title' => 'Our areas of expertise',
+        'items' => [
+            [
+                'title' => 'Landing pages',
+                'icon' => $serviceIcons['landing']
+            ],
+            [
+                'title' => 'Email banners and newsletters',
+                'icon' => $serviceIcons['email']
+            ],
+            [
+                'title' => 'Pitch decks and one-pagers',
+                'icon' => $serviceIcons['pitch']
+            ],
+            [
+                'title' => 'Social ads, static and motion',
+                'icon' => $serviceIcons['social']
+            ],
+            [
+                'title' => 'Web design and redesign',
+                'icon' => $serviceIcons['web']
+            ],
+            [
+                'title' => 'Brand and campaign assets',
+                'icon' => $serviceIcons['brand']
+            ]
+        ]
     ],
     'contact' => [
         'title' => 'Do you want to boost <br>your digital brand?',

@@ -1,7 +1,125 @@
 /* Services Component Styles */
 .marketing-services {
-    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content in the page */
+    padding: 120px 56px;
+    gap: 56px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--negromutanto, #000); /* Ensure background matches */
 }
+
 .marketing-services .services-header {
-    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+    max-width: 1328px;
+}
+
+.services-eyebrow {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -0.011em;
+    color: #FFFFFF;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.services-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 125%;
+    letter-spacing: -1px;
+    color: #F0EDE8;
+    margin: 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 56px;
+    width: 100%;
+    max-width: 1328px;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    gap: 40px; /* Reduced gap slightly from 56px to fit content better */
+    background: #101010;
+    border-bottom: 1px solid #292929;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: #84FF5F;
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-icon i {
+    font-size: 45px;
+    color: #FFFFFF;
+    font-weight: 300; /* For a thinner outline look if supported */
+}
+
+
+
+.service-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .marketing-services {
+        padding: 80px 24px;
+        gap: 40px;
+    }
+    
+    .services-title {
+        font-size: 32px;
+    }
+    
+    .services-eyebrow {
+        font-size: 16px;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    
+    .service-card {
+        padding: 32px 24px;
+    }
 }

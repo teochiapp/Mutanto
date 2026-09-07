@@ -88,7 +88,6 @@ body {
 }
 main {
     flex: 1;
-    padding: 20px;
     z-index: 0;
 }
 .generalDivHeighrAndWidth {
