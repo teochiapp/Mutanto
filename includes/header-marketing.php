@@ -126,6 +126,7 @@ $urlToHome = URL_SITE . "en/";
 
     const toggleMenu = () => {
       mobileMenu.classList.toggle('is-open');
+      document.body.classList.toggle('no-scroll');
     };
 
     if(hamburger) hamburger.addEventListener('click', toggleMenu);
@@ -134,6 +135,7 @@ $urlToHome = URL_SITE . "en/";
     links.forEach(link => {
       link.addEventListener('click', () => {
         mobileMenu.classList.remove('is-open');
+        document.body.classList.remove('no-scroll');
       });
     });
   });

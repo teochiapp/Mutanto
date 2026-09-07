@@ -34,7 +34,42 @@ $marketingData = [
         ]
     ],
     'projects' => [
-        'title' => 'Success Stories'
+        'eyebrow' => 'PORTFOLIO',
+        'title' => 'Highlighted projects',
+        'items' => [
+            [
+                'category' => 'HEALTHCARE | B2B',
+                'name' => 'HST Pathways',
+                'description' => 'Ongoing design support for a U.S. based B2B SaaS company. Social media, email banners, presentations, and campaign assets.',
+                'tags' => ['Social Media', 'UX/UI Design', 'Marketing Kits', 'Print Assets', 'Web Design', 'Graphic Design'],
+                'images' => [URL_SITE . 'img/projects/HTS Pathways/imageFull.webp'],
+                'mobile_images' => [URL_SITE . 'img/projects/HTS Pathways/imageMobile.webp']
+            ],
+            [
+                'category' => 'MARKETING | B2B',  
+                'name' => 'Erio Marketing',
+                'description' => 'Web design and social media assets in partnership with a US-based marketing agency.',
+                'tags' => ['Social Media', 'UX/UI Design', 'Web Design','Graphic Design'],
+                'images' => [URL_SITE . 'img/projects/Erio Marketing/imageFull.webp'],
+                'mobile_images' => [URL_SITE . 'img/projects/Erio Marketing/imageMobile.webp']
+            ],
+            [
+                'category' => 'TRADE MARKETING | B2B',
+                'name' => 'GU Trade',
+                'description' => 'Long-term brand and design partnership. Visual identity, social media, presentations and communication assets.',
+                'tags' => ['Branding', 'Social Media', 'Print Assets', 'Pitch Decks', 'Web Design', 'Graphic Design'],  
+                'images' => [URL_SITE . 'img/projects/GU Trade/imageFull.webp'],
+                'mobile_images' => [URL_SITE . 'img/projects/GU Trade/imageMobile.webp']
+            ],
+            [
+                'category' => 'NONPROFIT | EDUCATION',
+                'name' => 'Next Girl Up',
+                'description' => 'Full creative buildout for a US nonprofit empowering high school girls in business and marketing. From brand identity and website to campaign materials and certificates.',
+                'tags' => ['Branding', 'Social Media', 'Marketing Kits', 'Print Assets', 'Web Design', 'Graphic Design'],
+                'images' => [URL_SITE . 'img/projects/Next Girl UP/imageFull.webp'],
+                'mobile_images' => [URL_SITE . 'img/projects/Next Girl UP/imageMobile.webp']
+            ]
+        ]
     ],
     'services' => [
         'header' => 'SERVICES',

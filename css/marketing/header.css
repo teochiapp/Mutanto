@@ -159,13 +159,19 @@
   }
 }
 
+/* Utility to block scrolling when menu is open */
+body.no-scroll {
+  overflow: hidden;
+}
+
 /* Mobile Menu Overlay */
 .marketing-mobile-menu {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(16, 16, 16, 0.5);
+  background: rgba(16, 16, 16, 0.8);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid #292929;
   display: flex;
@@ -173,12 +179,14 @@
   padding: 24px 16px;
   gap: 32px;
   z-index: 10000;
-  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: opacity 0.5s ease, visibility 0.5s ease, transform 0.5s ease;
+  transform: translateY(-10px);
   opacity: 0;
   visibility: hidden;
 }
 
 .marketing-mobile-menu.is-open {
+  transform: translateY(0);
   opacity: 1;
   visibility: visible;
 }
@@ -194,6 +202,11 @@
   display: flex;
   align-items: center;
   gap: 8.18px;
+}
+
+.marketing-mobile-menu__logo a {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
 }
 
 .marketing-mobile-menu__close {
