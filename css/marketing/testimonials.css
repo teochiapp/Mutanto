@@ -1,0 +1,219 @@
+/* ==========================================================================
+   MARKETING - TESTIMONIALS (quotes)
+   Figma: quotes 1440x903 (desktop) / 374x1683 (mobile)
+   ========================================================================== */
+
+.marketing-testimonials {
+  box-sizing: border-box;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 56px;
+  gap: 56px;
+
+  width: 100%;
+  min-height: 903px;
+
+  background: #101010;
+
+  /* Inside auto layout */
+  flex: none;
+  align-self: stretch;
+  flex-grow: 0;
+  z-index: 20;
+}
+
+/* --------------------------------------------------------------------------
+   Encabezado
+   -------------------------------------------------------------------------- */
+.marketing-testimonials__head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  max-width: 1660px;
+  text-align: center;
+}
+
+.marketing-testimonials__eyebrow {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #F0EDE8;
+}
+
+.marketing-testimonials__title {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: -0.02em;
+  color: #F0EDE8;
+}
+
+/* --------------------------------------------------------------------------
+   Grilla de testimonios
+   -------------------------------------------------------------------------- */
+.marketing-testimonials__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: start;
+  gap: 48px;
+
+  width: 100%;
+  max-width: 1660px;
+  margin: 0 auto;
+}
+
+.marketing-testimonials__card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  margin: 0;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #292929;
+}
+
+.marketing-testimonials__quote {
+  flex: none;
+  width: 26px;
+  height: 20px;
+}
+
+.marketing-testimonials__text {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: -0.011em;
+  color: #F0EDE8;
+}
+
+/* Autor */
+.marketing-testimonials__author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.marketing-testimonials__avatar {
+  width: 48px;
+  height: 48px;
+  flex: none;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.marketing-testimonials__author-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.marketing-testimonials__name {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #F0EDE8;
+}
+
+.marketing-testimonials__role {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #8A8A8A;
+}
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+@media (max-width: 1280px) {
+  .marketing-testimonials__grid {
+    gap: 32px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .marketing-testimonials {
+    padding: 100px 32px;
+  }
+
+  .marketing-testimonials__grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    max-width: 720px;
+  }
+
+  .marketing-testimonials__title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+
+@media (max-width: 768px) {
+  .marketing-testimonials {
+    padding: 80px 24px;
+    gap: 56px;
+    min-height: 0;
+  }
+
+  .marketing-testimonials__eyebrow {
+    font-size: 13px;
+  }
+
+  .marketing-testimonials__title {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .marketing-testimonials__grid {
+    gap: 40px;
+  }
+
+  .marketing-testimonials__card {
+    gap: 20px;
+    padding-bottom: 24px;
+  }
+
+  .marketing-testimonials__quote {
+    width: 22px;
+    height: 17px;
+  }
+
+  .marketing-testimonials__text {
+    font-size: 15px;
+    line-height: 23px;
+  }
+
+  .marketing-testimonials__avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .marketing-testimonials__name {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .marketing-testimonials__role {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}

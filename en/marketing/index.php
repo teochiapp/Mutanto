@@ -20,16 +20,37 @@ $marketingData = [
         'description' => 'We work with marketing teams to create <strong>high-quality assets</strong> for mkt campaigns, product kickoff\'s, sales strategies, brand & content, without the overhead of a traditional agency.'
     ],
     'benefits' => [
-        'header' => 'BENEFITS',
-        'title' => 'WHY CHOOSE US',
+        'eyebrow' => 'ON-DEMAND DESIGN SUPPORT',
+        'title' => 'Design experts behind<br>your marketing team.',
+        'description' => 'Get high-quality creative talent, without the stress of hiring in-house.',
+        'cta_primary' => [
+            'text' => 'Book a free call',
+            'url'  => 'https://calendly.com/holamutanto/30min?month=' . date('Y-m')
+        ],
+        'cta_secondary' => [
+            'text' => 'Contact us',
+            'url'  => 'https://wa.me/5493516362772'
+        ],
         'items' => [
             [
-                'title' => 'Strategy',
-                'description' => 'We plan every step to ensure success.'
+                'number' => '01',
+                'title' => 'Fast tournaround',
+                'description' => 'Deadlines don\'t wait, and neither do we.'
             ],
             [
-                'title' => 'Creativity',
-                'description' => 'Designs and copy that captivate your audience.'
+                'number' => '02',
+                'title' => 'On-brand execution',
+                'description' => 'Every asset consistent across channels and touchpoints.'
+            ],
+            [
+                'number' => '03',
+                'title' => 'No strings attached',
+                'description' => 'Per project or monthly retainer, whatever fits your team.'
+            ],
+            [
+                'number' => '04',
+                'title' => 'One dedicated point of contact',
+                'description' => 'One project lead backed by a full design team.'
             ]
         ]
     ],
@@ -101,9 +122,42 @@ $marketingData = [
             ]
         ]
     ],
+    'testimonials' => [
+        'eyebrow' => 'TESTIMONIALS',
+        'title' => 'What our clients say',
+        'default_avatar' => URL_SITE . 'img/marketing/testimonials/avatar-default.png',
+        'items' => [
+            [
+                'quote' => 'I was nervous about outsourcing to an agency. However, Mutanto has been a dream partner. They are quick and responsive and create beautiful designs. I am always impressed with how they can adhere to our brand guidelines, yet nothing feels redundant or predictable. They never say no to whatever projects we ask, and are equally as invested in the results as we are. I am very grateful for their partnership!',
+                'name' => 'Erica Palmer',
+                'role' => 'Content Marketing Manager, Next Girl Up',
+                'avatar' => ''
+            ],
+            [
+                'quote' => 'Mutanto completely transformed our company\'s visual identity. Their positive attitude, the quality of their work, and the dedication and care they bring to everything they do are truly outstanding. We\'re very grateful to this amazing team.',
+                'name' => 'Marcelo Blanco',
+                'role' => 'Co-founder, GU Trade',
+                'avatar' => ''
+            ],
+            [
+                'quote' => 'I\'ve worked with the Mutanto team for over 3 years and they are excellent to work with! They are always willing to go the extra mile to help us meet deadlines. I especially appreciate the team\'s positive attitude, collaborative approach, and how well they are able to take direction and implement it into the designs they create!',
+                'name' => 'Kayla Hasler',
+                'role' => 'Senior Product Marketing Manager, HST Pathways',
+                'avatar' => ''
+            ]
+        ]
+    ],
     'contact' => [
-        'title' => 'Do you want to boost <br>your digital brand?',
-        'button_text' => 'Book a Call'
+        'title' => 'Ready to stop waiting <br>on design?',
+        'description' => '30-minute call. No commitments.<br>We\'ll show you how we work and learn what your team needs.',
+        'cta_primary' => [
+            'text' => 'Book a free call',
+            'url'  => 'https://calendly.com/holamutanto/30min?month=' . date('Y-m')
+        ],
+        'cta_secondary' => [
+            'text' => 'Contact us',
+            'url'  => 'https://wa.me/5493516362772'
+        ]
     ]
 ];
 ?>
@@ -138,9 +192,7 @@ $marketingData = [
     <?php require_once(realpath($_SERVER['DOCUMENT_ROOT'] . "/includes/marketing/projects.php")); ?>
     <?php require_once(realpath($_SERVER['DOCUMENT_ROOT'] . "/includes/marketing/services.php")); ?>
     
-    <section id="marketing-testimonials">
-        <?php require_once(realpath($_SERVER['DOCUMENT_ROOT'] . "/includes/home-user-reviwe.php")) ?>
-    </section>
+    <?php require_once(realpath($_SERVER['DOCUMENT_ROOT'] . "/includes/marketing/testimonials.php")); ?>
 
     <?php require_once(realpath($_SERVER['DOCUMENT_ROOT'] . "/includes/marketing/contact.php")); ?>
   </main>

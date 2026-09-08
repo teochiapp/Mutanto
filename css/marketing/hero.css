@@ -1,48 +1,87 @@
-/* Hero Container */
+/* ==========================================================================
+   MARKETING - HERO
+   Figma: header 1440x687 (desktop) / 374x631 (mobile)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Hero container  (bloque 'header' del Figma)
+   -------------------------------------------------------------------------- */
 .marketing-hero {
   box-sizing: border-box;
+
+  /* Auto layout */
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 180px 120px 120px;
   gap: 56px;
   isolation: isolate;
+
   width: 100%;
+  max-width: 100%;
+  min-height: 687px;
+
   position: relative;
   overflow: hidden;
-  min-height: 687px;
+  background: #101010;
+
+  /* Inside auto layout */
+  flex: none;
+  align-self: stretch;
+  flex-grow: 0;
+  z-index: 13;
 }
 
-/* Background Stars */
-.marketing-hero__star-1 {
+/* --------------------------------------------------------------------------
+   Fondo - estrellas verdes (SVG exportados de Figma, uno por estrella)
+   Desktop: una al medio-izquierda y otra en la esquina superior derecha.
+   -------------------------------------------------------------------------- */
+.marketing-hero__star {
   position: absolute;
-  width: 538.78px;
-  height: 538.78px;
-  right: -102.92px;
-  top: -206px;
-  background: linear-gradient(160.02deg, #84FF5F 9.67%, #101010 82.27%);
-  opacity: 0.84;
-  filter: blur(22.88px);
-  border-radius: 49.5732px;
-  transform: rotate(151.64deg);
-  z-index: -1;
+  display: none;
+  max-width: none;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
 }
 
-.marketing-hero__star-2 {
-  position: absolute;
-  width: 672.05px;
-  height: 672.05px;
-  left: -483.85px;
-  top: -97px;
-  background: linear-gradient(288.74deg, #84FF5F 20.63%, #101010 74.31%);
-  opacity: 0.84;
-  filter: blur(40px);
-  border-radius: 61.8357px;
-  transform: rotate(-53.83deg);
-  z-index: -1;
+/* Estrella grande: borde izquierdo, centrada en vertical */
+.marketing-hero__star--left {
+  display: block;
+  width: 695px;
+  height: 731px;
+  left: -430px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-/* Content Container */
+/* Estrella chica: esquina superior derecha */
+.marketing-hero__star--right {
+  display: block;
+  width: 362px;
+  height: 394px;
+  right: -45px;
+  top: -105px;
+}
+
+/* Estrellas mobile */
+.marketing-hero__star--mobile-top {
+  width: 430px;
+  height: 396px;
+  left: -240px;
+  top: -140px;
+}
+
+.marketing-hero__star--mobile-bottom {
+  width: 300px;
+  height: 277px;
+  right: -95px;
+  bottom: 20px;
+}
+
+/* --------------------------------------------------------------------------
+   Contenido
+   -------------------------------------------------------------------------- */
 .marketing-hero__content {
   display: flex;
   flex-direction: column;
@@ -50,7 +89,11 @@
   align-items: center;
   padding: 0px;
   gap: 24px;
+
+  width: 100%;
   max-width: 1012px;
+
+  position: relative;
   z-index: 1;
 }
 
@@ -64,6 +107,7 @@
   text-align: center;
   letter-spacing: -0.011em;
   color: #FFFFFF;
+  margin: 0;
 }
 
 /* Title */
@@ -74,6 +118,7 @@
   font-size: 72px;
   line-height: 75px;
   text-align: center;
+  letter-spacing: -0.02em;
   color: #F0EDE8;
   margin: 0;
 }
@@ -97,39 +142,171 @@
 
 .marketing-hero__description strong {
   font-weight: 700;
+  color: #FFFFFF;
 }
 
-/* Responsive adjust */
+/* ==========================================================================
+   MARKETING - HERO SLIDER  (bloque 'slider' del Figma)
+   1440x52 (desktop) / 374x100 (mobile)
+   ========================================================================== */
+.marketing-hero-slider {
+  box-sizing: border-box;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 16px 40px;
+  gap: 48px;
+
+  width: 100%;
+  height: 52px;
+
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+
+  /* Inside auto layout */
+  flex: none;
+  align-self: stretch;
+  flex-grow: 0;
+  z-index: 14;
+}
+
+/* Pista que se desplaza (2 copias identicas = loop infinito) */
+.marketing-hero-slider__track {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: none;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marketing-hero-slider-scroll 40s linear infinite;
+}
+
+.marketing-hero-slider__group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: none;
+}
+
+.marketing-hero-slider__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  flex: none;
+  /* el gap de 48px del Figma va aca para que los grupos calcen exacto */
+  margin-right: 48px;
+
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.011em;
+  color: #F0EDE8;
+  white-space: nowrap;
+}
+
+.marketing-hero-slider__star {
+  display: block;
+  width: 14px;
+  height: 14px;
+  flex: none;
+}
+
+/* La pista tiene 4 grupos identicos y cada item lleva su margin-right,
+   asi que los grupos calzan sin costura: desplazar 1/4 del track = 1 grupo
+   exacto. Al reiniciar el frame es identico -> el loop es infinito y no se
+   ve ningun corte ni hueco al final. */
+@keyframes marketing-hero-slider-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-25%); }
+}
+
+.marketing-hero-slider:hover .marketing-hero-slider__track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marketing-hero-slider__track {
+    animation: none;
+  }
+}
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .marketing-hero {
+    padding: 150px 60px 100px;
+  }
+
+  .marketing-hero__title {
+    font-size: 56px;
+    line-height: 60px;
+  }
+}
+
 @media (max-width: 768px) {
   .marketing-hero {
     padding: 120px 24px 80px;
+    gap: 56px;
+    min-height: 631px;
   }
-  
-  .marketing-hero__star-1 {
-    width: 351.92px;
-    height: 351.92px;
-    right: -20px;
-    top: 296px;
-    filter: blur(14.9448px);
-    border-radius: 32.3803px;
+
+  .marketing-hero__star--left,
+  .marketing-hero__star--right {
+    display: none;
   }
-  
-  .marketing-hero__star-2 {
-    width: 360.59px;
-    height: 360.59px;
-    left: -253px;
-    top: -109px;
-    filter: blur(21.4621px);
-    border-radius: 33.1781px;
-    transform: rotate(-119.51deg);
+
+  .marketing-hero__star--mobile-top,
+  .marketing-hero__star--mobile-bottom {
+    display: block;
   }
-  
+
   .marketing-hero__eyebrow {
     font-size: 14px;
+    line-height: 150%;
   }
-  
+
   .marketing-hero__title {
     font-size: 36px;
     line-height: 40px;
+  }
+
+  .marketing-hero__description {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  /* slider mobile */
+  .marketing-hero-slider {
+    padding: 40px;
+    gap: 48px;
+    height: 100px;
+  }
+}
+
+/* Tablet: el contenido queda centrado en vertical en vez de pegado arriba */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .marketing-hero {
+    justify-content: center;
+    padding: 140px 60px 120px;
+  }
+
+  .marketing-hero__title {
+    font-size: 48px;
+    line-height: 54px;
+  }
+}
+
+@media (max-width: 480px) {
+  .marketing-hero__title {
+    font-size: 32px;
+    line-height: 36px;
   }
 }

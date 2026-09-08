@@ -1,4 +1,147 @@
-/* Contact Component Styles */
+/* ============================================================
+   Contact (bloque "contact" del Figma)
+   ============================================================ */
+
 .marketing-contact {
-    padding: 100px 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 120px;
+  gap: 56px;
+  isolation: isolate;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 560px;
+  background: #101010;
+  flex: none;
+  align-self: stretch;
+  flex-grow: 0;
+  z-index: 21;
+}
+
+/* ---------- Insignia giratoria ---------- */
+.marketing-contact__badge {
+  position: absolute;
+  top: 50%;
+  right: -100px;
+  width: 511px;
+  height: 511px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+.marketing-contact__badge-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  animation: marketing-contact-badge-spin 28s linear infinite;
+}
+
+@keyframes marketing-contact-badge-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marketing-contact__badge-img { animation: none; }
+}
+
+/* ---------- Contenido ---------- */
+.marketing-contact__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  position: relative;
+  z-index: 1;
+  max-width: 780px;
+}
+
+.marketing-contact__title {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 75px;
+  letter-spacing: -0.02em;
+  color: #F0EDE8;
+  margin: 0;
+}
+
+.marketing-contact__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.marketing-contact__description {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.011em;
+  color: #8A8A8A;
+  margin: 0;
+}
+
+.marketing-contact__actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1280px) {
+  .marketing-contact { padding: 100px 80px; }
+  .marketing-contact__title { font-size: 60px; line-height: 66px; }
+  .marketing-contact__badge { width: 440px; height: 440px; right: -110px; }
+}
+
+@media (max-width: 1024px) {
+  .marketing-contact { padding: 100px 56px; }
+  .marketing-contact__title { font-size: 48px; line-height: 54px; }
+  .marketing-contact__badge { width: 360px; height: 360px; right: -120px; }
+}
+
+@media (max-width: 768px) {
+  .marketing-contact {
+    padding: 150px 24px 80px;
+    gap: 40px;
+    min-height: 536px;
+    justify-content: center;
+    z-index: 11;
+  }
+
+  .marketing-contact__content { gap: 32px; max-width: 100%; }
+  .marketing-contact__title { font-size: 44px; line-height: 46px; }
+  /* en mobile el titulo corta solo, sin el salto de linea del diseno desktop */
+  .marketing-contact__title br { display: none; }
+  .marketing-contact__bottom { gap: 28px; }
+
+  .marketing-contact__badge {
+    top: 60px;
+    right: -70px;
+    width: 220px;
+    height: 220px;
+    transform: none;
+  }
+
+  /* los dos botones entran en una sola fila, como en el diseno mobile */
+  .marketing-contact__actions { gap: 10px; flex-wrap: nowrap; }
+  .marketing-contact__actions .cta-button { padding: 10px 16px; height: 40px; font-size: 13px; }
+  .marketing-contact__actions .cta-button--solid { gap: 6px; }
+  .marketing-contact__actions .cta-button--outline { gap: 8px; }
+}
+
+@media (max-width: 360px) {
+  .marketing-contact__title { font-size: 38px; line-height: 41px; }
 }
