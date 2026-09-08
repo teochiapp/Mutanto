@@ -69,6 +69,7 @@ $urlToHome = URL_SITE . "en/";
 
   <!-- Mobile Menu Overlay -->
   <div class="marketing-mobile-menu" id="marketingMobileMenu">
+    <div class="marketing-mobile-menu__glow"></div>
     <div class="marketing-mobile-menu__header">
       <div class="marketing-mobile-menu__logo">
         <div class="marketing-header__logo-img">
@@ -122,7 +123,7 @@ $urlToHome = URL_SITE . "en/";
     const hamburger = document.getElementById('marketingHamburger');
     const mobileMenu = document.getElementById('marketingMobileMenu');
     const closeBtn = document.getElementById('marketingMobileMenuClose');
-    const links = mobileMenu.querySelectorAll('a');
+    const navLinks = document.querySelectorAll('.marketing-header__nav a, .marketing-mobile-menu__nav a');
 
     const toggleMenu = () => {
       mobileMenu.classList.toggle('is-open');
@@ -132,10 +133,37 @@ $urlToHome = URL_SITE . "en/";
     if(hamburger) hamburger.addEventListener('click', toggleMenu);
     if(closeBtn) closeBtn.addEventListener('click', toggleMenu);
     
-    links.forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.remove('is-open');
-        document.body.classList.remove('no-scroll');
+    navLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        const href = link.getAttribute('href');
+        if (href && href.startsWith('#')) {
+          const targetEl = document.querySelector(href);
+          if (targetEl) {
+            e.preventDefault();
+            
+            // Close mobile menu if open
+            if (mobileMenu && mobileMenu.classList.contains('is-open')) {
+              mobileMenu.classList.remove('is-open');
+              document.body.classList.remove('no-scroll');
+            }
+
+            // Calculate precise scroll target (Header height + 20px extra padding)
+            const header = document.querySelector('.marketing-header');
+            const headerHeight = header ? header.offsetHeight : 92;
+            const extraMargin = 20; // 20px padding above section title
+            const targetY = targetEl.getBoundingClientRect().top + window.pageYOffset - (headerHeight + extraMargin);
+
+            window.scrollTo({
+              top: Math.max(0, targetY),
+              behavior: 'smooth'
+            });
+
+            // Update URL hash without instant jump
+            if (history.pushState) {
+              history.pushState(null, null, href);
+            }
+          }
+        }
       });
     });
   });

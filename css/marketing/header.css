@@ -1,3 +1,22 @@
+/* Scroll offset configuration for fixed header (92px header + 20px clearance) */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 112px;
+}
+
+section[id^="marketing-"] {
+  scroll-margin-top: 112px;
+}
+
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 100px;
+  }
+  section[id^="marketing-"] {
+    scroll-margin-top: 100px;
+  }
+}
+
 /* Header Container */
 .marketing-header {
   box-sizing: border-box;
@@ -16,6 +35,7 @@
   backdrop-filter: blur(10px);
   z-index: 9999;
 }
+
 
 
 /* Nav Menu */
@@ -188,15 +208,16 @@ body.no-scroll {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(16, 16, 16, 0.8);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  background: rgba(16, 16, 16, 0.85);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
   border-bottom: 1px solid #292929;
   display: flex;
   flex-direction: column;
   padding: 24px 16px;
   gap: 32px;
   z-index: 10000;
+  overflow: hidden;
   transition: opacity 0.5s ease, visibility 0.5s ease, transform 0.5s ease;
   transform: translateY(-10px);
   opacity: 0;
@@ -209,11 +230,28 @@ body.no-scroll {
   visibility: visible;
 }
 
+/* Green Organic Glow Effect */
+.marketing-mobile-menu__glow {
+  position: absolute;
+  top: 15%;
+  left: -60px;
+  width: 320px;
+  height: 280px;
+  background: radial-gradient(circle, rgba(132, 255, 95, 0.45) 0%, rgba(132, 255, 95, 0.12) 50%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(65px);
+  opacity: 0.85;
+  pointer-events: none;
+  z-index: 0;
+}
+
 .marketing-mobile-menu__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 .marketing-mobile-menu__logo {
@@ -239,6 +277,8 @@ body.no-scroll {
 
 .marketing-mobile-menu__nav {
   width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 .marketing-mobile-menu__nav ul {
@@ -271,4 +311,6 @@ body.no-scroll {
   align-items: center;
   gap: 16px;
   padding-bottom: 24px;
+  position: relative;
+  z-index: 1;
 }
