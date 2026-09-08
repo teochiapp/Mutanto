@@ -190,6 +190,7 @@ $marketingData = [
     <?php require_once(realpath($_SERVER['DOCUMENT_ROOT'] . "/includes/marketing/hero.php")); ?>
     <?php require_once(realpath($_SERVER['DOCUMENT_ROOT'] . "/includes/marketing/benefits.php")); ?>
     <?php require_once(realpath($_SERVER['DOCUMENT_ROOT'] . "/includes/marketing/projects.php")); ?>
+    <?php require_once(realpath($_SERVER['DOCUMENT_ROOT'] . "/includes/marketing/projects-cta.php")); ?>
     <?php require_once(realpath($_SERVER['DOCUMENT_ROOT'] . "/includes/marketing/services.php")); ?>
     
     <?php require_once(realpath($_SERVER['DOCUMENT_ROOT'] . "/includes/marketing/testimonials.php")); ?>
