@@ -165,7 +165,7 @@ $marketingData = [
 <html lang="en">
 <head>
   <?php
-  $pageTitle = "Mutanto | Marketing";
+  $pageTitle = "Mutanto | Your Marketing Team";
   $pageDescription = "Boost your brand with our digital marketing services.";
   $pageKey = "Marketing, Mutanto, Digital Services";
   $pageUrl = URL_SITE . $language . "/" . $thisPageLanguages[$language];
