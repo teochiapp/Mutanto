@@ -155,18 +155,27 @@
     </div>
 </div>
 <script>
-   function setCookie(name, value, days) {
-        const expires = new Date();
-        expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);
-        document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/`;
-    }
+    const cookiesModal = document.querySelector("#mutanto__cookies");
     const mutantoCookiesButtnYes = document.querySelector("#mutanto__cookies_button_yes");
+    const mutantoCookiesButtnNo = document.querySelector(".mutanto__cookies_buttons a");
     
-    mutantoCookiesButtnYes.addEventListener("click", function() {
-        setCookie("mutanto", "yes", 30);
-        document.querySelector("#mutanto__cookies").style.display = "none";
-        
+    // Check local storage on load
+    if (localStorage.getItem("mutantoCookiesAccepted") === "yes") {
+        cookiesModal.style.display = "none";
+    }
 
+    mutantoCookiesButtnYes.addEventListener("click", function() {
+        localStorage.setItem("mutantoCookiesAccepted", "yes");
+        cookiesModal.style.display = "none";
     });
     
+    if (mutantoCookiesButtnNo) {
+        mutantoCookiesButtnNo.addEventListener("click", function(e) {
+            e.preventDefault();
+            localStorage.setItem("mutantoCookiesAccepted", "no");
+            cookiesModal.style.display = "none";
+            // Optional: redirect to Google if they really want to reject and leave
+            window.location.href = "https://www.google.com/";
+        });
+    }
 </script>

@@ -1,7 +1,7 @@
 <section id="marketing-benefits" class="marketing-benefits">
 
   <!-- Encabezado: titulo a la izquierda / bajada + CTAs a la derecha -->
-  <div class="marketing-benefits__top">
+  <div class="marketing-benefits__top reveal-on-scroll">
     <div class="marketing-benefits__intro">
       <p class="marketing-benefits__eyebrow"><?php echo $marketingData['benefits']['eyebrow']; ?></p>
       <h2 class="marketing-benefits__title"><?php echo $marketingData['benefits']['title']; ?></h2>
@@ -30,9 +30,9 @@
   </div>
 
   <!-- Grilla de beneficios -->
-  <div class="marketing-benefits__grid">
+  <div class="marketing-benefits__grid reveal-stagger">
     <?php foreach ($marketingData['benefits']['items'] as $benefit) : ?>
-      <article class="marketing-benefits__card">
+      <article class="marketing-benefits__card reveal-on-scroll">
         <span class="marketing-benefits__card-number"><?php echo $benefit['number']; ?></span>
         <h3 class="marketing-benefits__card-title"><?php echo $benefit['title']; ?></h3>
         <p class="marketing-benefits__card-text"><?php echo $benefit['description']; ?></p>

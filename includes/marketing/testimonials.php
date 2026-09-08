@@ -1,14 +1,14 @@
 <section id="marketing-testimonials" class="marketing-testimonials">
 
-  <div class="marketing-testimonials__head">
+  <div class="marketing-testimonials__head reveal-on-scroll">
     <p class="marketing-testimonials__eyebrow"><?php echo $marketingData['testimonials']['eyebrow']; ?></p>
     <h2 class="marketing-testimonials__title"><?php echo $marketingData['testimonials']['title']; ?></h2>
   </div>
 
-  <div class="marketing-testimonials__grid">
+  <div class="marketing-testimonials__grid reveal-stagger">
     <?php foreach ($marketingData['testimonials']['items'] as $testimonial) : ?>
       <?php $avatar = !empty($testimonial['avatar']) ? $testimonial['avatar'] : $marketingData['testimonials']['default_avatar']; ?>
-      <figure class="marketing-testimonials__card">
+      <figure class="marketing-testimonials__card reveal-on-scroll">
         <svg class="marketing-testimonials__quote" width="26" height="20" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <path d="M0 24 6.4 0h7.2L9.6 24H0Zm18.4 0L24.8 0H32l-4 24h-9.6Z" fill="#84FF5F"/>
         </svg>

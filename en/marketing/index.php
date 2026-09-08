@@ -131,19 +131,19 @@ $marketingData = [
                 'quote' => 'I was nervous about outsourcing to an agency. However, Mutanto has been a dream partner. They are quick and responsive and create beautiful designs. I am always impressed with how they can adhere to our brand guidelines, yet nothing feels redundant or predictable. They never say no to whatever projects we ask, and are equally as invested in the results as we are. I am very grateful for their partnership!',
                 'name' => 'Erica Palmer',
                 'role' => 'Content Marketing Manager, Next Girl Up',
-                'avatar' => ''
+                'avatar' => URL_SITE . 'img/marketing/testimonials/Erica.png'
             ],
             [
                 'quote' => 'Mutanto completely transformed our company\'s visual identity. Their positive attitude, the quality of their work, and the dedication and care they bring to everything they do are truly outstanding. We\'re very grateful to this amazing team.',
                 'name' => 'Marcelo Blanco',
                 'role' => 'Co-founder, GU Trade',
-                'avatar' => ''
+                'avatar' => URL_SITE . 'img/marketing/testimonials/Marcelo.png'
             ],
             [
                 'quote' => 'I\'ve worked with the Mutanto team for over 3 years and they are excellent to work with! They are always willing to go the extra mile to help us meet deadlines. I especially appreciate the team\'s positive attitude, collaborative approach, and how well they are able to take direction and implement it into the designs they create!',
                 'name' => 'Kayla Hasler',
                 'role' => 'Senior Product Marketing Manager, HST Pathways',
-                'avatar' => ''
+                'avatar' => URL_SITE . 'img/marketing/testimonials/Kayla.png'
             ]
         ]
     ],
@@ -200,5 +200,6 @@ $marketingData = [
   <?php require_once(realpath($_SERVER['DOCUMENT_ROOT']. "/includes/footer-marketing.php")) ?>
   <?php require_once(realpath($_SERVER['DOCUMENT_ROOT'] . "/includes/after-body.php")) ?>
   <script src="<?php echo (URL_SITE) ?>js/main.js"></script>
+  <script src="<?php echo (URL_SITE) ?>js/marketing.js"></script>
 </body>
 </html>

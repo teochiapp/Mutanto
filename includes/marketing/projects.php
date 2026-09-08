@@ -1,5 +1,5 @@
 <section id="marketing-projects" class="marketing-projects">
-    <div class="marketing-projects-header">
+    <div class="marketing-projects-header reveal-on-scroll">
         <h4 class="marketing-projects-eyebrow"><?php echo $marketingData['projects']['eyebrow']; ?></h4>
         <h2 class="marketing-projects-title"><?php echo $marketingData['projects']['title']; ?></h2>
         <div class="marketing-projects-separator"></div>
@@ -7,7 +7,7 @@
     
     <div class="marketing-projects-list">
         <?php foreach ($marketingData['projects']['items'] as $project): ?>
-            <div class="marketing-project-item">
+            <div class="marketing-project-item reveal-on-scroll">
                 <div class="marketing-project-info">
                     <div class="marketing-project-info-top">
                         <span class="marketing-project-category"><?php echo $project['category']; ?></span>

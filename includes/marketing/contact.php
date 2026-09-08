@@ -5,7 +5,7 @@
     <img class="marketing-contact__badge-img" src="<?php echo (URL_SITE) ?>img/marketing/contact/contact-badge.svg" alt="" role="presentation">
   </div>
 
-  <div class="marketing-contact__content">
+  <div class="marketing-contact__content reveal-on-scroll">
     <h2 class="marketing-contact__title"><?php echo $marketingData['contact']['title']; ?></h2>
 
     <div class="marketing-contact__bottom">

@@ -1,12 +1,12 @@
 <section id="marketing-services" class="marketing-services">
-     <div class="services-header">
+     <div class="services-header reveal-on-scroll">
         <h4 class="services-eyebrow"><?php echo $marketingData['services']['header']; ?></h4>
         <h2 class="services-title"><?php echo $marketingData['services']['title']; ?></h2>
     </div>
     
-    <div class="services-grid">
+    <div class="services-grid reveal-stagger">
         <?php foreach ($marketingData['services']['items'] as $item): ?>
-            <div class="service-card">
+            <div class="service-card reveal-on-scroll">
                 <div class="service-icon">
                     <?php echo $item['icon']; ?>
                 </div>

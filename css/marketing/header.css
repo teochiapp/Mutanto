@@ -34,7 +34,7 @@
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 145%;
   display: flex;
   align-items: center;
@@ -104,9 +104,18 @@
   border: 1px solid #84FF5F;
 }
 
+.cta-button--solid svg {
+  stroke: #101010;
+  transition: stroke 0.3s ease;
+}
+
 .cta-button--solid:hover {
   background: transparent;
   color: #84FF5F;
+}
+
+.cta-button--solid:hover svg {
+  stroke: #84FF5F;
 }
 
 .cta-button--outline {
@@ -119,9 +128,18 @@
   background: transparent;
 }
 
+.cta-button--outline svg path {
+  fill: #84FF5F;
+  transition: fill 0.3s ease;
+}
+
 .cta-button--outline:hover {
   background: #84FF5F;
   color: #101010;
+}
+
+.cta-button--outline:hover svg path {
+  fill: #101010;
 }
 
 .marketing-header__hamburger {

@@ -27,7 +27,7 @@
        alt="" aria-hidden="true" role="presentation">
 
   <!-- Content -->
-  <div class="marketing-hero__content">
+  <div class="marketing-hero__content reveal-on-scroll">
     <div class="marketing-hero__eyebrow">
       <?php echo $marketingData['hero']['eyebrow']; ?>
     </div>
@@ -43,14 +43,13 @@
   </div>
 </section>
 
-<!-- Slider / marquee infinito -->
 <div class="marketing-hero-slider" aria-hidden="true">
   <div class="marketing-hero-slider__track">
     <?php for ($i = 0; $i < 4; $i++) : ?>
       <div class="marketing-hero-slider__group">
         <?php foreach ($marketingHeroSliderItems as $item) : ?>
           <span class="marketing-hero-slider__item">
-            <img class="marketing-hero-slider__star" src="<?php echo (URL_SITE) ?>img/green-start.svg" alt="" aria-hidden="true">
+            <img class="marketing-hero-slider__star" src="<?php echo (URL_SITE) ?>img/marketing/hero/hero-marquee-star.svg" alt="" aria-hidden="true">
             <?php echo $item; ?>
           </span>
         <?php endforeach; ?>

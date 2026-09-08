@@ -127,65 +127,69 @@ function activeMutantoMenu() {
 }
 
 // Show and hide  menu
-hamburgerToggle.addEventListener("click", function (event) {
-    activeMutantoMenu();
-    if (pageScrollPercentage >= 2) {
-        if (gotoTopButtn.style.visibility == "visible") {
-            gotoTopButtn.style.visibility = "hidden";
-        }else{
-            setTimeout(function (){
-                gotoTopButtn.style.visibility = "visible";
-            },300);
+if (hamburgerToggle) {
+    hamburgerToggle.addEventListener("click", function (event) {
+        activeMutantoMenu();
+        if (pageScrollPercentage >= 2) {
+            if (gotoTopButtn && gotoTopButtn.style.visibility == "visible") {
+                gotoTopButtn.style.visibility = "hidden";
+            } else if (gotoTopButtn) {
+                setTimeout(function (){
+                    gotoTopButtn.style.visibility = "visible";
+                },300);
+            }
         }
 
-        
-    }
-
-
-
-    //Only for mobiles and tables
-    if (getWindowWidth() <= tables && getWindowWidth() > mobiles) {
-        myToogleDisplay(mutantoLogoTxt, 'animationFadeIn');
-        myToogleDisplay(mutantoLogoTxtDarkMode, '');
-        setTimeout(function () {
-            document.querySelector(".header__mutanto-select-language").classList.toggle("header__mutanto-select-language-hidden");
-        }, 100);
-
-    }
-    //Only mobiles
-    if (getWindowWidth() <= mobiles) {
-        myToogleDisplay(mutantoLogoForDesktop, 'animationFadeIn');
-        myToogleDisplay(mutantoLogoForMobiles, 'animationFadeIn');
-        myToogleDisplay(mutantoLogoTxtDarkMode, 'animationFadeIn');
-        setTimeout(function () {
-            document.querySelector(".header__mutanto-select-language").classList.toggle("header__mutanto-select-language-hidden");
-        }, 100);
-    }
-    // Only Desktop
-    if (getWindowWidth() >= destktop) {
-        setTimeout(function () {
-            document.querySelector(".header__mutanto-select-language").classList.toggle("header__mutanto-select-language-hidden");
+        //Only for mobiles and tables
+        if (getWindowWidth() <= tables && getWindowWidth() > mobiles) {
             myToogleDisplay(mutantoLogoTxt, 'animationFadeIn');
             myToogleDisplay(mutantoLogoTxtDarkMode, '');
-        }, 100);
-    }
-});
+            setTimeout(function () {
+                const el = document.querySelector(".header__mutanto-select-language");
+                if (el) el.classList.toggle("header__mutanto-select-language-hidden");
+            }, 100);
+        }
+        //Only mobiles
+        if (getWindowWidth() <= mobiles) {
+            myToogleDisplay(mutantoLogoForDesktop, 'animationFadeIn');
+            myToogleDisplay(mutantoLogoForMobiles, 'animationFadeIn');
+            myToogleDisplay(mutantoLogoTxtDarkMode, 'animationFadeIn');
+            setTimeout(function () {
+                const el = document.querySelector(".header__mutanto-select-language");
+                if (el) el.classList.toggle("header__mutanto-select-language-hidden");
+            }, 100);
+        }
+        // Only Desktop
+        if (getWindowWidth() >= destktop) {
+            setTimeout(function () {
+                const el = document.querySelector(".header__mutanto-select-language");
+                if (el) el.classList.toggle("header__mutanto-select-language-hidden");
+                myToogleDisplay(mutantoLogoTxt, 'animationFadeIn');
+                myToogleDisplay(mutantoLogoTxtDarkMode, '');
+            }, 100);
+        }
+    });
+}
 
 // Hide menu and replace the menu imagen to first imgen
-backMenuButtn.addEventListener("click", function () {
-    activeMutantoMenu();
-    imageContainer.classList.toggle("clicked");
+if (backMenuButtn) {
+    backMenuButtn.addEventListener("click", function () {
+        activeMutantoMenu();
+        if (imageContainer) imageContainer.classList.toggle("clicked");
 
-    document.querySelector(".header__mutanto-select-language").classList.toggle("header__mutanto-select-language-hidden");
-    myToogleDisplay(mutantoLogoTxt, 'animationFadeIn');
-    myToogleDisplay(mutantoLogoTxtDarkMode, '');
-
-});
+        const el = document.querySelector(".header__mutanto-select-language");
+        if (el) el.classList.toggle("header__mutanto-select-language-hidden");
+        myToogleDisplay(mutantoLogoTxt, 'animationFadeIn');
+        myToogleDisplay(mutantoLogoTxtDarkMode, '');
+    });
+}
 
 //Change the images of the menu replace the menu imagen to first imgen
-imageContainer.addEventListener("click", function () {
-    this.classList.toggle("clicked");
-});
+if (imageContainer) {
+    imageContainer.addEventListener("click", function () {
+        this.classList.toggle("clicked");
+    });
+}
 
 //Set antimations and behavior of Card One
 mutantoElementCardOne.forEach(e => {
@@ -345,6 +349,9 @@ const resizeText = ({ element, parent }) => {
 
 
 locomotiveScroll = (function () {
+    if (typeof LocomotiveScroll === 'undefined') {
+        return null;
+    }
     const locomotiveScroll = new LocomotiveScroll({
         lenisOptions: {
             wrapper: window,

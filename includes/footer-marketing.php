@@ -1,7 +1,7 @@
 <!-- Footer -->
 <footer class="marketing-footer-wrapper">
   <div class="marketing-footer">
-    <div class="marketing-footer__content">
+    <div class="marketing-footer__content reveal-on-scroll">
       <!-- Top Line and Diamond -->
       <div class="marketing-footer__divider">
         <div class="marketing-footer__line"></div>
@@ -31,7 +31,7 @@
           </a>
         </div>
         <div class="marketing-footer__copy">
-          All rights reserved. 2023 Mutanto.
+          All rights reserved. <?php echo date('Y'); ?> Mutanto.
         </div>
       </div>
     </div>
