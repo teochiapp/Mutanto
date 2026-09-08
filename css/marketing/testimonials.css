@@ -10,11 +10,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 120px 56px;
+  padding: 80px 56px;
   gap: 56px;
 
   width: 100%;
-  min-height: 903px;
 
   background: #101010;
 
@@ -171,7 +170,6 @@
   .marketing-testimonials {
     padding: 80px 24px;
     gap: 56px;
-    min-height: 0;
   }
 
   .marketing-testimonials__eyebrow {
