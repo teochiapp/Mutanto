@@ -35,11 +35,21 @@
   z-index: 0;
 }
 
+/* Capa intermedia: la orbita (solo mobile). El giro sobre su eje va en la img. */
+.marketing-contact__badge-orbit,
+.marketing-contact__badge-orbit-x {
+  width: 100%;
+  height: 100%;
+  transform: translateZ(0);
+}
+
 .marketing-contact__badge-img {
   display: block;
   width: 100%;
   height: 100%;
   animation: marketing-contact-badge-spin 28s linear infinite;
+  will-change: transform;
+  backface-visibility: hidden;
 }
 
 @keyframes marketing-contact-badge-spin {
@@ -52,8 +62,34 @@
   }
 }
 
+/* Orbita ovalada (solo mobile): dos movimientos suaves desfasados 90 grados.
+   Al ser dos animaciones de 2 keyframes con ease-in-out y alternate, la curva
+   es continua (sin los cortes que deja una orbita hecha con 8 pasos). */
+@keyframes marketing-contact-badge-orbit-y {
+  from {
+    transform: translate3d(0, -30px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 30px, 0);
+  }
+}
+
+@keyframes marketing-contact-badge-orbit-x {
+  from {
+    transform: translate3d(-12px, 0, 0);
+  }
+
+  to {
+    transform: translate3d(12px, 0, 0);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .marketing-contact__badge-img {
+
+  .marketing-contact__badge-img,
+  .marketing-contact__badge-orbit,
+  .marketing-contact__badge-orbit-x {
     animation: none;
   }
 }
@@ -175,6 +211,17 @@
     width: 220px;
     height: 220px;
     transform: none;
+  }
+
+  /* solo en mobile la insignia orbita en ovalo, ademas de girar sobre su eje */
+  .marketing-contact__badge-orbit {
+    animation: marketing-contact-badge-orbit-y 6s ease-in-out infinite alternate;
+    will-change: transform;
+  }
+
+  .marketing-contact__badge-orbit-x {
+    animation: marketing-contact-badge-orbit-x 6s ease-in-out -3s infinite alternate;
+    will-change: transform;
   }
 
   /* los dos botones entran en una sola fila, como en el diseno mobile */

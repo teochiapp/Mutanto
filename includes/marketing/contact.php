@@ -2,7 +2,11 @@
 
   <!-- Insignia giratoria (gira sobre su propio eje hacia la derecha) -->
   <div class="marketing-contact__badge" aria-hidden="true">
-    <img class="marketing-contact__badge-img" src="<?php echo (URL_SITE) ?>img/marketing/contact/contact-badge.svg" alt="" role="presentation">
+    <div class="marketing-contact__badge-orbit">
+      <div class="marketing-contact__badge-orbit-x">
+        <img class="marketing-contact__badge-img" src="<?php echo (URL_SITE) ?>img/marketing/contact/contact-badge.svg" alt="" role="presentation">
+      </div>
+    </div>
   </div>
 
   <div class="marketing-contact__content reveal-on-scroll">
