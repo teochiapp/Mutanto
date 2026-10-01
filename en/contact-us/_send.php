@@ -52,8 +52,8 @@ require '../../vendor/autoload.php';
         $mail->Password = SMTP_PASSWORD;
 
         $mail->setFrom('web@mutanto.com.ar', 'Mutanto');
-        $mail->addReplyTo('contact@mutanto.com.ar', 'Mutanto');
-        $mail->addAddress("contact@mutanto.com.ar", $name);
+        $mail->addReplyTo($email, $name);
+        $mail->addAddress("hola@mutanto.com.ar", $name);
         $message = "Nombre: $name" . "<br> E-mail: $email" ."<br> Descubrimiento: $know" . "<br> Descripcion del proyecto:<br>" . $comments .$linkToFile;
         $mail->Subject = 'e-mail desde Mutanto.com.ar';
         $mail->msgHTML($message);

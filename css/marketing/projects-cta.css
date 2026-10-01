@@ -64,14 +64,15 @@
   }
 
   .marketing-projects-cta__actions {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     max-width: 326px;
-    gap: 12px;
+    gap: 8px;
   }
 
   .marketing-projects-cta__actions .cta-button {
-    flex: 1;
-    padding: 12px 16px 12px 20px;
-    font-size: 13px;
+    width: 100%;
   }
 }

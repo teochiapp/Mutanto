@@ -206,24 +206,18 @@
     line-height: 24px;
   }
 
-  /* los dos botones entran en una sola fila, como en el diseno mobile */
+  /* los botones van uno abajo del otro en mobile */
   .marketing-benefits__actions {
-    gap: 10px;
-    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 326px;
+    gap: 8px;
   }
 
   .marketing-benefits__actions .cta-button {
-    padding: 10px 16px;
-    height: 40px;
-    font-size: 13px;
-  }
-
-  .marketing-benefits__actions .cta-button--solid {
-    gap: 6px;
-  }
-
-  .marketing-benefits__actions .cta-button--outline {
-    gap: 8px;
+    width: 100%;
   }
 
   .marketing-benefits__grid {

@@ -145,6 +145,18 @@
   color: #FFFFFF;
 }
 
+/* Mobile Actions (Hidden on Desktop) */
+.marketing-hero__mobile-actions {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  max-width: 326px;
+  margin: 0 auto;
+}
+
 /* ==========================================================================
    MARKETING - HERO SLIDER  (bloque 'slider' del Figma)
    1440x52 (desktop) / 374x100 (mobile)
@@ -281,6 +293,10 @@
   .marketing-hero__description {
     font-size: 14px;
     line-height: 22px;
+  }
+
+  .marketing-hero__mobile-actions {
+    display: flex;
   }
 
   /* slider mobile */

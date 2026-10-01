@@ -24,12 +24,16 @@ $marketingData = [
         'title' => 'Design experts behind<br>your marketing team.',
         'description' => 'Get high-quality creative talent, without the stress of hiring in-house.',
         'cta_primary' => [
-            'text' => 'Book a free call',
+            'text' => 'Book a free 30-min call',
             'url'  => 'https://calendly.com/holamutanto/30min?month=' . date('Y-m')
         ],
         'cta_secondary' => [
             'text' => 'Contact us',
             'url'  => 'https://wa.me/5493516362772'
+        ],
+        'cta_tertiary' => [
+            'text' => 'Email us',
+            'url'  => URL_SITE . 'en/contact-us/'
         ],
         'items' => [
             [
@@ -151,12 +155,16 @@ $marketingData = [
         'title' => 'Ready to stop waiting <br>on design?',
         'description' => '30-minute call. No commitments.<br>We\'ll show you how we work and learn what your team needs.',
         'cta_primary' => [
-            'text' => 'Book a free call',
+            'text' => 'Book a free 30-min call',
             'url'  => 'https://calendly.com/holamutanto/30min?month=' . date('Y-m')
         ],
         'cta_secondary' => [
             'text' => 'Contact us',
             'url'  => 'https://wa.me/5493516362772'
+        ],
+        'cta_tertiary' => [
+            'text' => 'Email us',
+            'url'  => URL_SITE . 'en/contact-us/'
         ]
     ]
 ];
@@ -177,7 +185,7 @@ $marketingData = [
   <link rel="stylesheet" href="<?php echo (URL_SITE) ?>css/home.css">
   
   <!-- NUEVO: CSS Modular de Marketing -->
-  <link rel="stylesheet" href="<?php echo (URL_SITE) ?>css/marketing/main.css">
+  <link rel="stylesheet" href="<?php echo (URL_SITE) ?>css/marketing/main.css?v=<?php echo time(); ?>">
 </head>
 <body>
   <!-- Loader is disabled for the marketing page to prevent unstyled flashes, as its CSS is in the main site bundle -->

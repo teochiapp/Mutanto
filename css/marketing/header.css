@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 /* Scroll offset configuration for fixed header (92px header + 20px clearance) */
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 112px;
 }
 
+.marketing-benefits,
+.marketing-projects,
+.marketing-services,
+.marketing-testimonials,
+.marketing-contact,
 section[id^="marketing-"] {
   scroll-margin-top: 112px;
 }
@@ -12,6 +19,12 @@ section[id^="marketing-"] {
   html {
     scroll-padding-top: 100px;
   }
+
+  .marketing-benefits,
+  .marketing-projects,
+  .marketing-services,
+  .marketing-testimonials,
+  .marketing-contact,
   section[id^="marketing-"] {
     scroll-margin-top: 100px;
   }
@@ -148,9 +161,10 @@ section[id^="marketing-"] {
   background: transparent;
 }
 
-.cta-button--outline svg path {
-  fill: #84FF5F;
-  transition: fill 0.3s ease;
+.cta-button--outline svg path,
+.cta-button--outline svg polyline,
+.cta-button--outline svg line {
+  transition: all 0.3s ease;
 }
 
 .cta-button--outline:hover {
@@ -158,8 +172,12 @@ section[id^="marketing-"] {
   color: #101010;
 }
 
-.cta-button--outline:hover svg path {
+.cta-button--outline:hover svg path[fill="#84FF5F"] {
   fill: #101010;
+}
+
+.cta-button--outline:hover svg [stroke="#84FF5F"] {
+  stroke: #101010;
 }
 
 .marketing-header__hamburger {
@@ -230,7 +248,7 @@ body.no-scroll {
   visibility: visible;
 }
 
-/* Green Organic Glow Effect */
+/* Green Organic Glow Effect (Only visible when at the top of the page) */
 .marketing-mobile-menu__glow {
   position: absolute;
   top: 15%;
@@ -240,9 +258,16 @@ body.no-scroll {
   background: radial-gradient(circle, rgba(132, 255, 95, 0.45) 0%, rgba(132, 255, 95, 0.12) 50%, transparent 70%);
   border-radius: 50%;
   filter: blur(65px);
-  opacity: 0.85;
+  opacity: 0;
+  visibility: hidden;
   pointer-events: none;
   z-index: 0;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+body.at-top .marketing-mobile-menu__glow {
+  opacity: 0.85;
+  visibility: visible;
 }
 
 .marketing-mobile-menu__header {
@@ -313,4 +338,60 @@ body.no-scroll {
   padding-bottom: 24px;
   position: relative;
   z-index: 1;
+}
+
+.marketing-header__contact-text {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+a.cta-button--icon {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  border: 1px solid #84FF5F !important;
+  border-radius: 16px;
+  background: transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.cta-button--icon-mail {
+  width: 50px;
+}
+
+.cta-button--icon-mail svg stroke {
+  transition: stroke 0.3s ease;
+}
+
+.cta-button--icon-mail:hover {
+  background: #84FF5F;
+}
+
+.cta-button--icon-mail:hover svg {
+  stroke: #101010;
+}
+
+.cta-button--icon-wp {
+  width: 50px;
+}
+
+.cta-button--icon-wp svg path {
+  fill: #84FF5F;
+  transition: fill 0.3s ease;
+}
+
+.cta-button--icon-wp:hover {
+  background: #84FF5F;
+}
+
+.cta-button--icon-wp:hover svg path {
+  fill: #101010;
 }
